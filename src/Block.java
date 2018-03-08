@@ -14,39 +14,30 @@ public class Block {
 		this.data = data;
 		this.previousHash = previousHash;
 		this.timeStamp = new Date().getTime();
+		this.hash = calculHash(this);
 	}
 	
 	public static int getIndex() {
 		return index;
 	}
 
-
-
 	public String getHash() {
 		return hash;
 	}
-
-
 
 	public String getPreviousHash() {
 		return previousHash;
 	}
 
-
-
 	public String getData() {
 		return data;
 	}
-
-
 
 	public long getTimeStamp() {
 		return timeStamp;
 	}
 
-
-
-	public String calculHash(Block b){
+	private String calculHash(Block b){
 		String input = "" + b.getIndex() + b.getPreviousHash().toString() + b.getData();
 		try {
 			MessageDigest digest = MessageDigest.getInstance("SHA-256");	        
@@ -64,4 +55,12 @@ public class Block {
 			throw new RuntimeException(e);
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "Block "+index+" [hash=" + hash + ", previousHash=" + previousHash + ", data=" + data + ", timeStamp=" + timeStamp
+				+ "]";
+	}
+	
+	
 }
