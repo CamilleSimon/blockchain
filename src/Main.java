@@ -6,7 +6,6 @@ public class Main {
 		System.out.println(b0);
 		Block b1 = new Block(1, b0.getHash(), "Second block");
 		System.out.println(b1);
-
 	}
 
 }

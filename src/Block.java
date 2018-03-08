@@ -3,9 +3,9 @@ import java.security.MessageDigest;
 
 public class Block {
 
-	private static int index = 0;
-	public String hash;
-	public String previousHash;
+	private int index;
+	private String hash;
+	private String previousHash;
 	private String data;
 	private long timeStamp; //as number of milliseconds since 1/1/1970.
 	
@@ -17,7 +17,7 @@ public class Block {
 		this.hash = calculHash(this);
 	}
 	
-	public static int getIndex() {
+	public int getIndex() {
 		return index;
 	}
 
@@ -38,22 +38,25 @@ public class Block {
 	}
 
 	private String calculHash(Block b){
-		String input = "" + b.getIndex() + b.getPreviousHash().toString() + b.getData();
-		try {
-			MessageDigest digest = MessageDigest.getInstance("SHA-256");	        
+		if(b != null){
+			String input = "" + b.getIndex() + b.getPreviousHash().toString() + b.getData();
+			try {
+				MessageDigest digest = MessageDigest.getInstance("SHA-256");	        
 
-			byte[] hash = digest.digest(input.getBytes("UTF-8"));	        
-			StringBuffer hexString = new StringBuffer(); // This will contain hash as hexidecimal
-			for (int i = 0; i < hash.length; i++) {
-				String hex = Integer.toHexString(0xff & hash[i]);
-				if(hex.length() == 1) hexString.append('0');
-				hexString.append(hex);
+				final byte[] hash = digest.digest(input.getBytes("UTF-8"));	        
+				StringBuffer hexString = new StringBuffer(); // This will contain hash as hexidecimal
+				for (int i = 0; i < hash.length; i++) {
+					String hex = Integer.toHexString(0xff & hash[i]);
+					if(hex.length() == 1) hexString.append('0');
+						hexString.append(hex);
+				}
+				return hexString.toString();
 			}
-			return hexString.toString();
+			catch(Exception e) {
+				throw new RuntimeException(e);
+			}
 		}
-		catch(Exception e) {
-			throw new RuntimeException(e);
-		}
+		return null;
 	}
 
 	@Override
