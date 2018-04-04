@@ -1,24 +1,28 @@
 import java.util.ArrayList;
 import java.util.List;
-import org.graphstream.graph.Node;
 
-public class Miner{
-
-	private List<Block> blockchain; 
+public class Miner extends Node{
+	
+	private Block localBlock;			//Local block of the miner
+	private List<Object> pendingFacts;	//List of fact waiting to be add to the blockchain
 	
 	/**
 	 * Creation of a node with an empty blockchain.
 	 */
-	public Miner(){
-		blockchain = new ArrayList<Block>();
+	public Miner(int id){
+		super(id);
+		this.localBlock = null;
+		this.pendingFacts = new ArrayList<Object>();
 	}
 	
 	/**
 	 * Creation of a node with the blockchain passed in parameter
 	 * @param blockchain
 	 */
-	public Miner(List<Block> blockchain){
-		this.blockchain = blockchain;
+	public Miner(int id, List<Block> blockchain){
+		super(id, blockchain);
+		this.localBlock = null;
+		this.pendingFacts = new ArrayList<Object>();
 	}
 	
 	/**
@@ -68,7 +72,7 @@ public class Miner{
 	 * Return the list as a string
 	 */
 	public String toString(){
-		String s = "";
+		String s = "{id = " + id + ", BC = \n";
 		if(blockchain.size() > 0){
 			Block b;
 			for(int i = 0; i < blockchain.size(); i++){
@@ -76,6 +80,6 @@ public class Miner{
 				s += b.toString();
 			}
 		}
-		return s;
+		return s + "}";
 	}
 }

@@ -66,7 +66,7 @@ public class Block {
 	 * String version of the block.
 	 */
 	public String toString() {
-		return "Block "+index+" [hash=" + hash + ", previousHash=" + previousHash + ", data=" + data + ", timeStamp=" + timeStamp
+		return "[" + index + ", hash = " + hash + ", previousHash = " + previousHash + ", data = " + data + ", timeStamp=" + timeStamp
 				+ "]\n";
 	}
 }
