@@ -5,7 +5,7 @@ Camille Simon, Master 2 IWOCS Université Le Havre Normandie
 
 ## Introduction
 
-<p style="text-align:justify;">Fin 2017, le cours de la monnaie virtuelle *Bitcoin* s'envole. Cette étrange devise, peu connue du grand public, se retrouve à la une de tous les média. Commence alors la diffusion des termes *Bitcoin*, *Blockchain* et *cryptomonnaies* dans le vocabulaire courant. Mais que désignent ces mots ? Dans cette introduction, nous définirons le vocabulaire essentiel.</p>
+Fin 2017, le cours de la monnaie virtuelle *Bitcoin* s'envole. Cette étrange devise, peu connue du grand public, se retrouve à la une de tous les média. Commence alors la diffusion des termes *Bitcoin*, *Blockchain* et *cryptomonnaies* dans le vocabulaire courant. Mais que désignent ces mots ? Dans cette introduction, nous définirons le vocabulaire essentiel.
 
 <p align="center">
   <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/schema-monnaies.png" height="250"/>
@@ -14,13 +14,13 @@ Camille Simon, Master 2 IWOCS Université Le Havre Normandie
   <b>Figure 1 :</b> Diagramme des monnaies
 </p>
 
-<p style="text-align:justify;">On appelle *monnaie* une unité qui sert à exprimer le prix des objets ou des services. Le *Bitcoin* est une *cryptomonnaie*. Les *cryptomonnaies* sont caractérisées par l'utilisation de procédés cryptographiques ainsi que par l'implication des utilisateurs dans la création et l'échange de la monnaie. Le Bitcoin fait partie des *monnaies virtuelles*. Elles se différencient des monnaies que nous connaissons<sup>1</sup>, comme l'euro, la monnaie unique de l'Union Européenne, du fait qu'elles n'ont pas de réalité physique. Si vous souhaitez acheter une baguette de pain en euro, vous pouvez le faire à l'aide de pièces ou de billets ayant une valeur fixée. Mais, ce n'est pas le cas avec la monnaie Bitcoin, car elle n'a pas de forme tangible. Les Bitcoins sont stockés sur des supports numériques (clé USB, ordinateur, smart phone,...) et échangés à travers un réseau décentralisé. De manière générale, on appelle *transaction* le fait de réaliser une opération financière. Les transactions réalisées avec des Bitcoins sont consignées dans un grand "registre" public appelé *Blockchain*.</p>
+On appelle *monnaie* une unité qui sert à exprimer le prix des objets ou des services. Le *Bitcoin* est une *cryptomonnaie*. Les *cryptomonnaies* sont caractérisées par l'utilisation de procédés cryptographiques ainsi que par l'implication des utilisateurs dans la création et l'échange de la monnaie. Le Bitcoin fait partie des *monnaies virtuelles*. Elles se différencient des monnaies que nous connaissons<sup>1</sup>, comme l'euro, la monnaie unique de l'Union Européenne, du fait qu'elles n'ont pas de réalité physique. Si vous souhaitez acheter une baguette de pain en euro, vous pouvez le faire à l'aide de pièces ou de billets ayant une valeur fixée. Mais, ce n'est pas le cas avec la monnaie Bitcoin, car elle n'a pas de forme tangible. Les Bitcoins sont stockés sur des supports numériques (clé USB, ordinateur, smart phone,...) et échangés à travers un réseau décentralisé. De manière générale, on appelle *transaction* le fait de réaliser une opération financière. Les transactions réalisées avec des Bitcoins sont consignées dans un grand "registre" public appelé *Blockchain*.
 
-<p style="text-align:justify;">Qu'est-ce que la *Blockchain* ? Quel est son principe de fonctionnement ? Est-elle indissociable de la monnaie Bitcoin ? Quels pourraient être ses domaines d'application et quelles en seraient les limites ?</p>
+Qu'est-ce que la *Blockchain* ? Quel est son principe de fonctionnement ? Est-elle indissociable de la monnaie Bitcoin ? Quels pourraient être ses domaines d'application et quelles en seraient les limites ?
 
-<p style="text-align:justify;">Pour répondre à ces questions, le présent rapport commencera par présenter un rapide historique de la Blockchain ainsi que son fonctionnement. Suivra une présentation des différents domaines d'applications et des limites de cette technologie. Enfin, nous verrons quelles évolutions sont envisageables dans le futur pour la Blockchain.</p>
+Pour répondre à ces questions, le présent rapport commencera par présenter un rapide historique de la Blockchain ainsi que son fonctionnement. Suivra une présentation des différents domaines d'applications et des limites de cette technologie. Enfin, nous verrons quelles évolutions sont envisageables dans le futur pour la Blockchain.
 
-<p style="text-align:justify;"><sup>1</sup> Les devises utilisées par les États sont appelées *monnaies dettes*. Cette appellation vient du fait que l'argent est créé par le remboursement des dettes. Plus d'informations sur les monnaies réelles ou virtuelles : **Laborde**, Stéphane (2012) *La théorie relative de la monnaie*. Consultable en ligne : [http://trm.creationmonetaire.info/](http://trm.creationmonetaire.info/) (Consulté le 22/02/2018).</p>
+<sup>1</sup> Les devises utilisées par les États sont appelées *monnaies dettes*. Cette appellation vient du fait que l'argent est créé par le remboursement des dettes. Plus d'informations sur les monnaies réelles ou virtuelles : **Laborde**, Stéphane (2012) *La théorie relative de la monnaie*. Consultable en ligne : [http://trm.creationmonetaire.info/](http://trm.creationmonetaire.info/) (Consulté le 22/02/2018).
 
 ## Rappel historique
 
@@ -48,18 +48,17 @@ Avant de détailler le fonctionnement de la Blockchain, il est nécessaire de d�
 
 Les fonctions de condensat sont utilisées en cryptographie et en informatique. Il s'agit de fonctions qui prennent en entrée une donnée et retournent une *empreinte* ou une *signature* de taille fixée, également appelée *hash* qui garantit l'intégrité de cette donnée. La donnée peut être non seulement une liste de transactions comme dans le cas du Bitcoin, mais encore n'importe quel type d'information. Pour obtenir la signature d'une donnée, les fonctions de hachage les plus connues sont le *MD5* et le *SHA-256*. L'exemple ci-dessous présente les hash obtenus à partir de différentes chaînes de caractères en utilisant la fonction *MD5*.
 
-\begin{wrapfigure}{L}{0.48\textwidth}
-    \vspace{-20pt}
-    \includegraphics[width=0.48\textwidth]{500px-Hachagesvg.png}
-    \caption{Exemples de hachages de textes par la fonction md5; (a) le texte utilisé est la version libre de "20.000 lieues sous les mers" du projet Gutenberg; (b) la version modifiée est le même fichier texte, le 10ème caractère de la 1000ième ligne ayant été remplacé par le caractère "*".}
-    \vspace{-20pt}
-\end{wrapfigure}
+<p align="center">
+  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/500px-Hachagesvg.png" height="250"/>
+</p>
+<p align="center">
+  <b>Figure 2 :</b> Exemples de hachages de textes par la fonction md5; (a) le texte utilisé est la version libre de "20.000 lieues sous les mers" du projet Gutenberg; (b) la version modifiée est le même fichier texte, le 10ème caractère de la 1000ième ligne ayant été remplacé par le caractère "*".
+</p>
 
 Les fonctions de hachage sont caractérisées par les trois propriétés suivantes : 
 
-\begin{itemize}
-    \item Il est facile d'obtenir le hash d'une information. Cette opération demande un temps de calcul négligeable.
-    \item L'opération réciproque, c'est-à-dire reconstituer un document en fonction de son hash est au contraire impossible. Cette propriété est appelée "propriété de sens unique".
+* Il est facile d'obtenir le hash d'une information. Cette opération demande un temps de calcul négligeable.
+* L'opération réciproque, c'est-à-dire reconstituer un document en fonction de son hash est au contraire impossible. Cette propriété est appelée "propriété de sens unique".
     
     \item On appelle *collision* deux empreintes identiques provenant du hachage de deux informations différentes. Pour que la fonction de condensat soit considérée comme étant de bonne qualité, il faut qu'elle limite le nombre de collision. Cette propriété est dite de "résistance aux collisions". 
 \end{itemize}
