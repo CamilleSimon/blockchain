@@ -29,11 +29,11 @@ Le Bitcoin n'est connu que d'un petit nombre d'internautes jusqu'au mois de nove
 
 Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à s'intéresser au fonctionnement de la cryptomonnaie et de la Blockchain. Les entreprises se rendent alors compte du potentiel que représente la Blockchain.
 
-##Principe & fonctionnement
+## Principe & fonctionnement
 
 Avant de détailler le fonctionnement de la Blockchain, il est nécessaire de définir ce qu'est une *fonction de condensat* également appelé *fonction de hachage*.
 
-###Fonction de condensat
+### Fonction de condensat
 
 Les fonctions de condensat sont utilisées en cryptographie et en informatique. Il s'agit de fonctions qui prennent en entrée une donnée et retournent une *empreinte* ou une *signature* de taille fixée, également appelée *hash* qui garantit l'intégrité de cette donnée. La donnée peut être non seulement une liste de transactions comme dans le cas du Bitcoin, mais encore n'importe quel type d'information. Pour obtenir la signature d'une donnée, les fonctions de hachage les plus connues sont le *MD5* et le *SHA-256*. L'exemple ci-dessous présente les hash obtenus à partir de différentes chaînes de caractères en utilisant la fonction *MD5*.
 
@@ -55,15 +55,15 @@ Les fonctions de hachage sont caractérisées par les trois propriétés suivant
 
 On supposera dans la suite du document que le hash d'une information est unique. Passons maintenant à la description de la structure Blockchain.
 
-## Description de la structure Blockchain
+### Description de la structure Blockchain
 
 Commençons par nous intéresser à l'élément central d'une Blockchain, le bloc. Tous les blocs de la Blockchain comportent les éléments suivants : un *index*, une date de création *timestamp*, de l'information *data*, le hash du bloc précédent dans la Blockchain *previousHash*, et le *hash* de son propre bloc. Détaillons ces différents éléments.
 
-### Index
+#### Index
 
 L'*index* est un numéro indiquant l'emplacement du bloc dans la liste. Le bloc d'index 0 est le premier bloc de la chaîne. Le bloc d'index 8 est le 9\textsuperscript{ème} bloc de la chaîne, et de manière générale le bloc d'index $i$ est donc le $i+1$\textsuperscript{ème} bloc de la chaîne.
 
-### Timestamp
+#### Timestamp
 
 Le *timestamp*, également appelé horodatage en français, sert à renseigner le moment où le bloc commence à être créé. Il existe plusieurs formats de temps. Dans le cas du Bitcoin, c'est le format de temps POSIX, très répandu en informatique, qui a été choisi. Il s'agit du nombre de secondes écoulées depuis le 1\textsuperscript{er} janvier 1970 à minuit au méridien de Greenwich. Pour une lecture du temps plus aisée, on peut choisir le standard ISO 8601. Voici un exemple de ces deux formats de temps :
 \begin{center}
@@ -74,11 +74,11 @@ Le *timestamp*, également appelé horodatage en français, sert à renseigner l
 
 \vspace{-30pt}
 
-### Data
+#### Data
 
 Il est possible d'enregistrer dans la Blockchain des informations de toutes sortes : des transactions, des messages, des enregistrements semblables à ce que l'on peut trouver dans des bases de données ou encore des URL. Cette information est appelée *data* du bloc. Elle peut être en partie ou entièrement chiffrée\footnote{Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.} afin de la sécuriser.
 
-### Hash et previousHash
+#### Hash et previousHash
 
 Le *hash* du bloc est le résultat de la fonction de condensat ayant pris en entrée l'index, le *timestamp*, le *previousHash* et les données du bloc. Le *previousHash* quant à lui fait référence au *hash* du bloc précédent dans la chaîne. 
 
@@ -94,7 +94,7 @@ De plus, le *previousHash* est une donnée utilisée dans la génération du *ha
     \label{fig:my_label}
 \end{figure}
 
-## Mise en \oeuvre de la Blockchain
+### Mise en \oeuvre de la Blockchain
 
 On appelle *réseau* un ensemble de *\noeuds*reliés ensembles et communicant entre eux. Chaque \noeud possède une copie de la Blockchain. Un \noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau \noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des \noeuds qui produisent les nouveaux blocs sont appelés *mineurs* et le processus de création se nomme *le minage*.
 
@@ -105,8 +105,7 @@ On distingue trois types de Blockchain. Elles se différencient en fonction de l
     \item Il existe enfin des *Blockchain hybrides* qui allient les aspects publics et privés.
 \end{itemize}
 
-### Principe du Minage
-
+#### Principe du Minage
 
 Chaque mineur construit un bloc dit *local*, c'est-à-dire qu'il construit un bloc à partir des informations dont il a connaissance. Dans le cas du Bitcoin, chaque mineur enregistre les transactions dans l'ordre dans lequel elles lui parviennent. Cet ordre peut être différent d'un mineur à l'autre. On peut généraliser en appelant *faits* les informations transitant sur le réseau et collectées par les mineurs.
 
@@ -141,7 +140,7 @@ Bien sûr, il existe d'autres preuves : des preuves aléatoires comme celle pré
 
 Après la sélection d'un bloc local comme nouveau bloc de la Blockchain, ce dernier est envoyé à l'ensemble des \noeuds du réseau. Lorsqu'un \noeud reçoit le nouveau bloc, il va supprimé de sa file d'attente les faits présent dans le bloc. Il évite ainsi le risque qu'une information soit présente plusieurs fois dans la Blockchain. Une fois cette opération réalisée, les faits présent dans la file d'attente vont constituer les données du bloc local. On retourne ainsi au début du processus.
 
-### Validation de la chaîne
+#### Validation de la chaîne
 
 Les \noeuds sont amenés à vérifier l'intégrité de leur Blockchain. Il y a deux vérifications à effectuer : une première afin de s'assurer que la Blockchain n'a pas été modifiée localement et une seconde s'assurant que tous les \noeuds disposent de la même Blockchain.
 
@@ -167,7 +166,7 @@ Par extension, elle peut également garder trace des transactions ou transferts 
 %Pérennité => papier description
 %Registre d'état civil => naissance & décès
 
-\subsection{Smart Contrat}
+### Smart Contrat
 
 La deuxième grande famille d'applications, moins connue, mais très prometteuse, consiste à utiliser la Blockchain comme un Smart Contrat. 
 
@@ -176,8 +175,6 @@ La deuxième grande famille d'applications, moins connue, mais très prometteuse
 Malheureusement, à la fin de la location le locataire refuse de verser les 50 \% restant. De plus, une vitre a été cassée, et lorsque le propriétaire a voulu encaisser le chèque, celui-ci a été refusé car le compte était vide. Le propriétaire décide donc de porter plainte et comparait au tribunal. Les acteurs en présence sont donc les suivants : le propriétaire, le locataire, le juriste qui a rédigé le contrat de location, la banque maniant les fonds, l'avocat et le tribunal pour la plainte.
 
 Dans le cas d'un Smart Contrat, les différents éléments du contrat sont enregistrés sous la forme de mini-programmes dans des blocs. Les deux parties, locataire et propriétaire, scellent le contrat ensemble de façon à ce qu’eux seuls puissent l'annuler\footnote{Il s'agit d'un mécanisme de clé publique/clé privé qui n'est pas présenté ici car il n'est pas utilisé dans toutes les Blockchains. Vous pouvez consulter une rapide présentation à l'adresse suivante : \url{http://www-igm.univ-mlv.fr/~dr/XPOSE2006/depail/fonctionnement.html}}. Le mini-programme s'exécute à un moment donné par un horodatage inscrit dans le bloc. 
-
-\vspace{1em}
 
 Dans notre cas cela donnerait :
 \begin{itemize}
@@ -189,45 +186,17 @@ Dans notre cas cela donnerait :
     \item Le contrat continu d'exister tant que la Blockchain existe. 
 \end{itemize}
 
-\vspace{1em}
-
 Dans le cas de l'usage d'une Blockchain, il devient possible de réduire les intermédiaires comme les juristes. De plus, ce type de contrat peut remplacer les *tiers de confiance* comme les banques qui servent habituellement de garants afin de verrouiller les fonds le temps de la transaction.
 
-%\subsection{}
+## Limites et perspectives
 
-%\subsubsection*{Les banques}
-
-%Comme nous l'avons vu avec le Bitcoin ou avec les Smart Contrats, la Blockchain peut remplacer les banques. A une époque où il ne s'écoule pas une année sans la révélation d'un scandale financier, l'opportunité d'avoir accès à un registre des comptes infalsifiable et public permettrait de vérifier aisément à quelles fins l'argent est dépensé.
-
-%Une quarantaine de banques ont pour l'heure décider de travailler ensemble ainsi qu'avec l'entreprise R3 CEV afin d'établir des standards pour les Blockchains aux seins des banques. Le but étant de copier le principe des cryptomonnaies afin de l'appliquer pour les monnaies-dettes.
-
-
-\section{Limites et perspectives}
-
-%http://assistance.bitconseil.fr/support/solutions/articles/31000135176-taille-et-emplacement-de-la-blockchain-de-bitcoin
 Une première limite concerne la taille de la Blockchain. En effet, comme la Blockchain doit être unique, toutes les informations sont enregistrées dans la même liste. On estime la taille actuelle de la Blockchain utilisée pour les transactions Bitcoin à 150 Go\footnote{Il est possible de suivre en temps réel l'évolution de la taille de la Blockchain sur : \url{https://charts.bitcoin.com/chart/blockchain-size}}. Cette taille importante impose aux \noeuds du réseau de disposer de suffisamment d'espace mémoire. Toutefois, ceci peut être nuancé aux vues du faible coût de l'espace mémoire. Cette contrainte est plus importante dans le cas d'une application aux objets connectés où les ressources sont plus restreintes.
 
 En fonction du nombre de \noeuds sur le réseau, certains problèmes peuvent émerger. Une fois le consensus réalisé, le nouveau bloc élu doit être envoyé à l'ensemble des \noeuds ce qui engendre un encombrement du réseau. De plus, les mineurs ne peuvent proposer de nouveaux blocs qu'une fois le bloc précédent réceptionné par l'ensemble des \noeuds. Cette attente des \noeuds se traduit par des effets de latence sur le réseau. Le phénomène de latence augmente davantage lorsque qu'une partie de la Blockchain doit transiter entre les \noeuds. C'est le cas si un ensemble de \noeuds n'a pas la bonne version de la Blockchain. 
 
-%https://halshs.archives-ouvertes.fr/halshs-01673329/file/17057.pdf
-%http://data.em-lyon.com/wp-content/uploads/2017/01/GODEBARGE_ROSSAT_Blockchain-version-finale.pdf
-%http://www.agoravox.fr/actualites/economie/article/les-cryptomonnaies-du-futur-189712
-%https://www.fournisseur-energie.com/monnaies-numeriques-impact-ecologique/
-
 Beaucoup de détracteurs de la Blockchain lui reprochent son coût énergétique. Il s'agit là d'un double amalgame. En effet ce n'est pas la Blockchain en elle-même qui nécessite beaucoup de ressource, c'est éventuellement la preuve de travail. Il s'agit en réalité plus d'un problème propre aux cryptomonnaies car la difficulté de la preuve de travail est augmentée régulièrement. Cette augmentation de la difficulté entraîne la consommation de ressources machines toujours plus importantes. Il est possible d'utiliser la preuve de travail sans connaître de coût énergétique excessif. De même, il existe d'autres preuves pouvant être adoptées. Il suffit de prendre pour exemple la monnaie virtuelle *Ğ1* dont l'impact carbone est très faible car ce n'est pas le minage qui génère la création de monnaie\footnote{La description de la monnaie *Ğ1* ainsi que son mode de fonctionnement sont décrit à l'adresse : \url{https://duniter.org/fr/duniter-pourquoi-comment/}.}. 
 
-%https://bitconnect.co/bitcoin-news/119/top-5-blockchain-technology-myths-the-mainstream-has-fallen-for
-
-%- Taille de la Blockchain
-%- Sur le réseau : scalability and latency issues
-%- Le type de consensus a beaucoup d'importance
-%- Réécriture de la Blockchain => limite des usages
-%Perspectives :
-%Holochain
-
-\clearpage
-
-\section*{Conclusion}
+## Conclusion
 
 La technologie Blockchain a été créée en 2008 en même temps que la cryptomonnaie Bitcoin. Elle a été conçue afin de servir de registre aux transactions financières de façon à ce que l'information soit décentralisée, sécurisée et anonyme. Concrètement mise en place à partir de 2013, cette première Blockchain est toujours en activité.
 
@@ -237,15 +206,9 @@ Quoique simple, le structure en chaîne de bloc suffit néanmoins à garantir la
 
 Il existe trois types de Blockchain en fonction des droits de minage, de la plus restrictive, la Blockchain privée à la plus permissive, le Blockchain publique. Quel que soit le type de Blockchain, le choix de la preuve influe sur la dépense énergétique et la latence du réseau. Seules quelques limites sont connues à la Blockchain notamment sa taille en constante augmentation et l'encombrement du réseau proportionnel à cette taille.
 
-%Qu'est-ce que la \textit{Blockchain} ? Quel est son principe de fonctionnement ? Est-elle indissociable de la monnaie Bitcoin ? Quels pourraient être ses domaines d'application et quelles en seraient les limites ?
-
 Cette technologie, relativement récente, est pour l'heure peu documentée. La Blockchain est aujourd'hui presque intégralement déployée dans le domaine des cryptomonnaies, pourtant il existe de multiples domaines d'applications à cette technologie. Nous ne sommes aujourd'hui qu'à l'aube de l'avènement de la Blockchain qui devrait révolutionner notre façon de le fiabiliser les transactions numériques.
 
-%un peu plus nous menez vers une société tout numérique. %
-
-\clearpage
-
-\section*{Bibliographie}
+## Bibliographie
 
 2016, GODEBARGE Ferréol, ROSSAT R, et Godebarge Ferréol, Rossat Romain. «Principes clés d’une application blockchain», 15 décembre 2016. \url{http://data.em-lyon.com/wp-content/uploads/2017/01/GODEBARGE_ROSSAT_Blockchain-version-finale.pdf}.
 
