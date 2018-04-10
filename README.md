@@ -17,7 +17,7 @@ Pour répondre à ces questions, le présent rapport commencera par présenter u
 
 <sup>1</sup> Les devises utilisées par les États sont appelées *monnaies dettes*. Cette appellation vient du fait que l'argent est créé par le remboursement des dettes. Plus d'informations sur les monnaies réelles ou virtuelles : **Laborde**, Stéphane (2012) *La théorie relative de la monnaie*. Consultable en ligne : [http://trm.creationmonetaire.info/](http://trm.creationmonetaire.info/) (Consulté le 22/02/2018).
 
-\section{Rappel historique}
+## Rappel historique
 
 La technologie Blockchain a été évoquée pour la première fois en 2008 dans un article intitulé *Bitcoin: A Peer-to-Peer Electronic Cash System*\footnote{\textbf{Nakamoto}, Satoshi (2008). *Bitcoin: A Peer-to-Peer Electronic Cash System*. Consultable en ligne : \url{https://bitcoin.org/bitcoin.pdf} (Consulté le 27/02/2018).} écrit par Satoshi Nakamoto. Il y présente son idée de création d'une monnaie décentralisée et dont les transactions seraient totalement transparentes. Il appelle Blockchain le support d'information enregistrant l'ensemble des transactions de façon transparente, anonyme et sécurisée.
 
@@ -29,20 +29,11 @@ Le Bitcoin n'est connu que d'un petit nombre d'internautes jusqu'au mois de nove
 
 Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à s'intéresser au fonctionnement de la cryptomonnaie et de la Blockchain. Les entreprises se rendent alors compte du potentiel que représente la Blockchain.
 
-%https://webusers.imj-prg.fr/~ricardo.perez-marco/BlockChain/BitcoinP7.pdf ???
-%https://openclassrooms.com/courses/comprendre-le-bitcoin-et-la-BlockChain/le-principe-du-bitcoin-1-2-la-BlockChain
-%https://www.meteo-BlockChain.fr/digmasbord-BlockChain/l-histoire-de-la-BlockChain/
-%https://steemit.com/BlockChain/@alsaceBlockChain/BlockChain-un-peu-d-histoire-and-pourquoi-cela-fonctionne
-%https://bitcoin.org/bitcoin.pdf
-%https://bitcoin.fr/une-classification-des-monnaies-decentralisees/
-%https://bitcoin.fr/Cours-du-bitcoin/
-%\footnote{File:Hachage.svg. (2017, September 14). Wikimedia Commons, . Retrieved 08:27, février 28, 2018 from https://commons.wikimedia.org/w/index.php?title=File:Hachage.svg&oldid=258582573.}
-
-\section{Principe \& fonctionnement}
+##Principe & fonctionnement
 
 Avant de détailler le fonctionnement de la Blockchain, il est nécessaire de définir ce qu'est une *fonction de condensat* également appelé *fonction de hachage*.
 
-\subsection{Fonction de condensat}
+###Fonction de condensat
 
 Les fonctions de condensat sont utilisées en cryptographie et en informatique. Il s'agit de fonctions qui prennent en entrée une donnée et retournent une *empreinte* ou une *signature* de taille fixée, également appelée *hash* qui garantit l'intégrité de cette donnée. La donnée peut être non seulement une liste de transactions comme dans le cas du Bitcoin, mais encore n'importe quel type d'information. Pour obtenir la signature d'une donnée, les fonctions de hachage les plus connues sont le *MD5* et le *SHA-256*. L'exemple ci-dessous présente les hash obtenus à partir de différentes chaînes de caractères en utilisant la fonction *MD5*.
 
@@ -64,15 +55,15 @@ Les fonctions de hachage sont caractérisées par les trois propriétés suivant
 
 On supposera dans la suite du document que le hash d'une information est unique. Passons maintenant à la description de la structure Blockchain.
 
-\subsection{Description de la structure Blockchain}
+## Description de la structure Blockchain
 
 Commençons par nous intéresser à l'élément central d'une Blockchain, le bloc. Tous les blocs de la Blockchain comportent les éléments suivants : un *index*, une date de création *timestamp*, de l'information *data*, le hash du bloc précédent dans la Blockchain *previousHash*, et le *hash* de son propre bloc. Détaillons ces différents éléments.
 
-\subsubsection*{Index}
+### Index
 
 L'*index* est un numéro indiquant l'emplacement du bloc dans la liste. Le bloc d'index 0 est le premier bloc de la chaîne. Le bloc d'index 8 est le 9\textsuperscript{ème} bloc de la chaîne, et de manière générale le bloc d'index $i$ est donc le $i+1$\textsuperscript{ème} bloc de la chaîne.
 
-\subsubsection*{Timestamp}
+### Timestamp
 
 Le *timestamp*, également appelé horodatage en français, sert à renseigner le moment où le bloc commence à être créé. Il existe plusieurs formats de temps. Dans le cas du Bitcoin, c'est le format de temps POSIX, très répandu en informatique, qui a été choisi. Il s'agit du nombre de secondes écoulées depuis le 1\textsuperscript{er} janvier 1970 à minuit au méridien de Greenwich. Pour une lecture du temps plus aisée, on peut choisir le standard ISO 8601. Voici un exemple de ces deux formats de temps :
 \begin{center}
@@ -83,23 +74,11 @@ Le *timestamp*, également appelé horodatage en français, sert à renseigner l
 
 \vspace{-30pt}
 
-%https://fr.wikipedia.org/wiki/Blockchain
-%https://fr.wikipedia.org/wiki/R%C3%A9seau
-%https://fr.wikipedia.org/wiki/Horodatage
-%https://fr.wikipedia.org/wiki/Date_(m%C3%A9tadonn%C3%A9e)
-%https://fr.wikipedia.org/wiki/Heure_Unix
-%https://fr.wikipedia.org/wiki/Temps_universel_coordonn%C3%A9#UTC_et_GMT
-
-\subsubsection*{Data}
+### Data
 
 Il est possible d'enregistrer dans la Blockchain des informations de toutes sortes : des transactions, des messages, des enregistrements semblables à ce que l'on peut trouver dans des bases de données ou encore des URL. Cette information est appelée *data* du bloc. Elle peut être en partie ou entièrement chiffrée\footnote{Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.} afin de la sécuriser.
 
-%https://marmelab.com/blog/2016/05/12/blockchain-expliquee-aux-developpeurs-web-la-theorie.html
-%https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54
-%https://www.ibm.com/developerworks/library/j-chaincode-for-java-developers/index.html
-%https://www.ssaurel.com/blog/create-your-own-blockchain-in-30-minutes/
-
-\subsubsection*{Hash et previousHash}
+### Hash et previousHash
 
 Le *hash* du bloc est le résultat de la fonction de condensat ayant pris en entrée l'index, le *timestamp*, le *previousHash* et les données du bloc. Le *previousHash* quant à lui fait référence au *hash* du bloc précédent dans la chaîne. 
 
@@ -115,27 +94,7 @@ De plus, le *previousHash* est une donnée utilisée dans la génération du *ha
     \label{fig:my_label}
 \end{figure}
 
-%Si on souhaite intercaler un nouveau Block, il est nécessaire de recalculer le hash de son suivant qui doit modifier son previsouHash. Ces modifications se reporte sur tous les Blocks suivant de la chaîne. Le même processus se produit si l'on souhaite modifier un Block existant.
-
-%\begin{figure}[!h]
-%    \centering
-%    \vspace{5pt}
-%    \includegraphics[scale=0.7]{blockchain-modif.png}
-%    \caption{Ajout d'un Block en 2\textsuperscript{ème} place dans la chaîne.}
-%    \label{fig:my_label}
-%    \vspace{-5pt}
-%\end{figure}
-
-%https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54
-
-%Il existe trois types de Blockchain : 
-%\begin{description}
-%    \item[Les Blockchain publiques] où l'accès n'est pas restreint, tout le monde peut devenir un noeud du réseau
-%    \item Les Blockchain privée où l'accès au réseau est contrôlé
-%    \item Les Blockchain mixtes
-%\end{description}
-
-\subsection{Mise en \oeuvre de la Blockchain}
+## Mise en \oeuvre de la Blockchain
 
 On appelle *réseau* un ensemble de *\noeuds*reliés ensembles et communicant entre eux. Chaque \noeud possède une copie de la Blockchain. Un \noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau \noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des \noeuds qui produisent les nouveaux blocs sont appelés *mineurs* et le processus de création se nomme *le minage*.
 
@@ -146,7 +105,7 @@ On distingue trois types de Blockchain. Elles se différencient en fonction de l
     \item Il existe enfin des *Blockchain hybrides* qui allient les aspects publics et privés.
 \end{itemize}
 
-\subsubsection{Principe du Minage}
+### Principe du Minage
 
 
 Chaque mineur construit un bloc dit *local*, c'est-à-dire qu'il construit un bloc à partir des informations dont il a connaissance. Dans le cas du Bitcoin, chaque mineur enregistre les transactions dans l'ordre dans lequel elles lui parviennent. Cet ordre peut être différent d'un mineur à l'autre. On peut généraliser en appelant *faits* les informations transitant sur le réseau et collectées par les mineurs.
@@ -178,38 +137,29 @@ Il existe différentes types preuves :
     \item La *preuve d'enjeu*, *proof of stake*, se présente comme une alternative à la preuve de travail. Les mineurs disposent de jetons qu'ils peuvent mettre en dépôt, lors du consensus, l'un des jetons du dépôt est choisi aléatoirement, c'est le mineur auquel il appartient qui doit produire le prochain bloc. S'il ne produit pas le bloc dans le temps imparti, c'est un autre jeton qui est sélectionné. Un mineur peut augmenter ses chances d'être sélectionné en déposant un grand nombre de jetons. Cette preuve est de plus en plus usitée dans les Blockchains publiques.
 \end{itemize}
 
-%Les faits non sélectionnés ?
-
 Bien sûr, il existe d'autres preuves : des preuves aléatoires comme celle présentée sur la figure 4 ou des preuves sélectionnant le bloc de longueur maximale.
 
 Après la sélection d'un bloc local comme nouveau bloc de la Blockchain, ce dernier est envoyé à l'ensemble des \noeuds du réseau. Lorsqu'un \noeud reçoit le nouveau bloc, il va supprimé de sa file d'attente les faits présent dans le bloc. Il évite ainsi le risque qu'une information soit présente plusieurs fois dans la Blockchain. Une fois cette opération réalisée, les faits présent dans la file d'attente vont constituer les données du bloc local. On retourne ainsi au début du processus.
 
-\subsubsection{Validation de la chaîne}
-
-%Réception Block => vérification
+### Validation de la chaîne
 
 Les \noeuds sont amenés à vérifier l'intégrité de leur Blockchain. Il y a deux vérifications à effectuer : une première afin de s'assurer que la Blockchain n'a pas été modifiée localement et une seconde s'assurant que tous les \noeuds disposent de la même Blockchain.
 
-\textbf{Vérification locale}
+**Vérification locale**
 
 À la réception d'un nouveau bloc, chaque \noeud doit vérifier que l'intégrité du bloc reçu n'a pas été altérée. Pour ce faire, on calcule le hash du bloc via la fonction de condensat, et on compare l'empreinte obtenue avec l'empreinte attachée au bloc. Si elles sont identiques, le \noeud peut ajouter le bloc à sa Blockchain; en revanche, si une anomalie est détectée, le \noeud doit demander à un autre \noeud du réseau de lui renvoyer le bloc.
 
 À intervalles de temps réguliers, les \noeuds doivent également vérifier que l'intégralité de leur chaîne est correcte. On vérifie alors chaque bloc de la même manière que pour les nouveaux blocs à ajouter en partant du dernier bloc et en remontant la chaîne via le *previousHash*. S’il y a un ou plusieurs blocs corrompus, le \noeud demande à un des autres \noeuds du réseau de lui renvoyer la Blockchain à partir du bloc non fiable le plus ancien. % le plus haut dans la liste ?.
 
-%https://www.technologies-ebusiness.com/enjeux-et-tendances/benefices-de-preuve-dautorite-proof-of-authority-poa
-%https://www.ethereum-france.com/quest-ce-que-la-preuve-denjeu-proof-of-stake-faq-par-v-buterin-traduction-francaise/
-%http://karlodwyer.com/publications/pdf/bitcoin_KJOD_2014.pdf
-%https://fr.wikipedia.org/wiki/Attaque_Sybil
-
-\textbf{Vérification à l'échelle du réseau}
+**Vérification à l'échelle du réseau**
 
 La Blockchain doit être unique, elle doit donc être la même sur l'ensemble des \noeuds du réseau. S’il y a plusieurs Blockchains sur le réseau, la Blockchain la plus répandue sera considérée comme la Blockchain légitime. Les \noeuds non conformes devront donc la récupérer afin qu'il n'y ait qu'une unique Blockchain partagée par tous les \noeuds.
 
-\section{Domaines d'application}
+## Domaines d'application
 
 Les domaines d'applications de la Blockchain sont variés : banque, finance, assurance, logistique, industrie, énergie, etc. Cependant, il ne s'agit que de déclinaisons de deux grands types d'applications : l'utilisation de la Blockchain comme un registre d'information d'une part et comme remplacement des tiers de confiance d'autre part.
 
-\subsection{Registre}
+### Registre
 
 Le premier usage que l'on trouve à la Blockchain est celui pour lequel elle a été conçue : enregistrer de l'information de façon pérenne. En effet, la structure en liste ordonnée dans le temps permet de stocker les informations de façon chronologique. On peut donc utiliser la Blockchain pour toutes les applications du type registre, par exemple registres d'état civil, registres matrimoniaux, registres des naissances, lois, etc.
 Par extension, elle peut également garder trace des transactions ou transferts d'informations, par exemple pour les registres bancaires et financiers, registres de bibliothèques, etc.
