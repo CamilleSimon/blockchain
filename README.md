@@ -3,7 +3,7 @@ Camille Simon, Master 2 IWOCS
 
 ## Introduction
 
-Fin 2017, le cours de la monnaie virtuelle \textit{Bitcoin} s'envole. Cette étrange devise, peu connue du grand public, se retrouve à la une de tous les média. Commence alors la diffusion des termes \textit{Bitcoin}, \textit{Blockchain} et \textit{cryptomonnaies} dans le vocabulaire courant. Mais que désignent ces mots ? Dans cette introduction, nous définirons le vocabulaire essentiel.
+Fin 2017, le cours de la monnaie virtuelle *Bitcoin* s'envole. Cette étrange devise, peu connue du grand public, se retrouve à la une de tous les média. Commence alors la diffusion des termes *Bitcoin*, *Blockchain* et *cryptomonnaies* dans le vocabulaire courant. Mais que désignent ces mots ? Dans cette introduction, nous définirons le vocabulaire essentiel.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
     \vspace{-10pt}
@@ -13,9 +13,9 @@ Fin 2017, le cours de la monnaie virtuelle \textit{Bitcoin} s'envole. Cette étr
     \vspace{-15pt}
 \end{wrapfigure}
 
-On appelle \textit{monnaie} une unité qui sert à exprimer le prix des objets ou des services. Le \textit{Bitcoin} est une \textit{cryptomonnaie}. Les \textit{cryptomonnaies} sont caractérisées par l'utilisation de procédés cryptographiques ainsi que par l'implication des utilisateurs dans la création et l'échange de la monnaie. Le Bitcoin fait partie des \textit{monnaies virtuelles}. Elles se différencient des monnaies que nous connaissons\footnote{Les devises utilisées par les États sont appelées \textit{monnaies dettes}. Cette appellation vient du fait que l'argent est créé par le remboursement des dettes. Plus d'informations sur les monnaies réelles ou virtuelles : \textbf{Laborde}, Stéphane (2012) \textit{La théorie relative de la monnaie}. Consultable en ligne : \url{http://trm.creationmonetaire.info/} (Consulté le 22/02/2018).}, comme l'euro, la monnaie unique de l'Union Européenne, du fait qu'elles n'ont pas de réalité physique. Si vous souhaitez acheter une baguette de pain en euro, vous pouvez le faire à l'aide de pièces ou de billets ayant une valeur fixée. Mais, ce n'est pas le cas avec la monnaie Bitcoin, car elle n'a pas de forme tangible. Les Bitcoins sont stockés sur des supports numériques (clé USB, ordinateur, smart phone,...) et échangés à travers un réseau décentralisé. De manière générale, on appelle \textit{transaction} le fait de réaliser une opération financière. Les transactions réalisées avec des Bitcoins sont consignées dans un grand "registre" public appelé \textit{Blockchain}. 
+On appelle *monnaie* une unité qui sert à exprimer le prix des objets ou des services. Le *Bitcoin* est une *cryptomonnaie*. Les *cryptomonnaies* sont caractérisées par l'utilisation de procédés cryptographiques ainsi que par l'implication des utilisateurs dans la création et l'échange de la monnaie. Le Bitcoin fait partie des *monnaies virtuelles*. Elles se différencient des monnaies que nous connaissons\footnote{Les devises utilisées par les États sont appelées *monnaies dettes*. Cette appellation vient du fait que l'argent est créé par le remboursement des dettes. Plus d'informations sur les monnaies réelles ou virtuelles : \textbf{Laborde}, Stéphane (2012) *La théorie relative de la monnaie*. Consultable en ligne : \url{http://trm.creationmonetaire.info/} (Consulté le 22/02/2018).}, comme l'euro, la monnaie unique de l'Union Européenne, du fait qu'elles n'ont pas de réalité physique. Si vous souhaitez acheter une baguette de pain en euro, vous pouvez le faire à l'aide de pièces ou de billets ayant une valeur fixée. Mais, ce n'est pas le cas avec la monnaie Bitcoin, car elle n'a pas de forme tangible. Les Bitcoins sont stockés sur des supports numériques (clé USB, ordinateur, smart phone,...) et échangés à travers un réseau décentralisé. De manière générale, on appelle *transaction* le fait de réaliser une opération financière. Les transactions réalisées avec des Bitcoins sont consignées dans un grand "registre" public appelé *Blockchain*. 
 
-Qu'est-ce que la \textit{Blockchain} ? Quel est son principe de fonctionnement ? Est-elle indissociable de la monnaie Bitcoin ? Quels pourraient être ses domaines d'application et quelles en seraient les limites ?
+Qu'est-ce que la *Blockchain* ? Quel est son principe de fonctionnement ? Est-elle indissociable de la monnaie Bitcoin ? Quels pourraient être ses domaines d'application et quelles en seraient les limites ?
 
 Pour répondre à ces questions, le présent rapport commencera par présenter un rapide historique de la Blockchain ainsi que son fonctionnement. Suivra une présentation des différents domaines d'applications et des limites de cette technologie. Enfin, nous verrons quelles évolutions sont envisageables dans le futur pour la Blockchain.
 
@@ -23,9 +23,9 @@ Pour répondre à ces questions, le présent rapport commencera par présenter u
 
 \section{Rappel historique}
 
-La technologie Blockchain a été évoquée pour la première fois en 2008 dans un article intitulé \textit{Bitcoin: A Peer-to-Peer Electronic Cash System}\footnote{\textbf{Nakamoto}, Satoshi (2008). \textit{Bitcoin: A Peer-to-Peer Electronic Cash System}. Consultable en ligne : \url{https://bitcoin.org/bitcoin.pdf} (Consulté le 27/02/2018).} écrit par Satoshi Nakamoto. Il y présente son idée de création d'une monnaie décentralisée et dont les transactions seraient totalement transparentes. Il appelle Blockchain le support d'information enregistrant l'ensemble des transactions de façon transparente, anonyme et sécurisée.
+La technologie Blockchain a été évoquée pour la première fois en 2008 dans un article intitulé *Bitcoin: A Peer-to-Peer Electronic Cash System*\footnote{\textbf{Nakamoto}, Satoshi (2008). *Bitcoin: A Peer-to-Peer Electronic Cash System*. Consultable en ligne : \url{https://bitcoin.org/bitcoin.pdf} (Consulté le 27/02/2018).} écrit par Satoshi Nakamoto. Il y présente son idée de création d'une monnaie décentralisée et dont les transactions seraient totalement transparentes. Il appelle Blockchain le support d'information enregistrant l'ensemble des transactions de façon transparente, anonyme et sécurisée.
 
-Pendant les deux années suivantes Satoshi met en place la monnaie Bitcoin. Il crée notamment un logiciel intitulé \textit{Bitcoin-QT} permettant de créer des unités monétaires. Avec le Bitcoin, Satoshi Nakamoto essaie de mettre à l'épreuve le raisonnement qu'il a exprimé dans son article. Il choisit de reproduire le modèle des ressources naturelles finies comme les métaux. C'est-à-dire qu'il fait en sorte que les utilisateurs ne puissent produire qu'un nombre déterminé de Bitcoin.
+Pendant les deux années suivantes Satoshi met en place la monnaie Bitcoin. Il crée notamment un logiciel intitulé *Bitcoin-QT* permettant de créer des unités monétaires. Avec le Bitcoin, Satoshi Nakamoto essaie de mettre à l'épreuve le raisonnement qu'il a exprimé dans son article. Il choisit de reproduire le modèle des ressources naturelles finies comme les métaux. C'est-à-dire qu'il fait en sorte que les utilisateurs ne puissent produire qu'un nombre déterminé de Bitcoin.
 
 Son expérience inspire entre 2013 et 2014 une multitude d'autres monnaies\footnote{Le site BitCoin.org a tenté de faire une liste des monnaies virtuelles : \url{https://bitcoin.fr/une-classification-des-monnaies-decentralisees/}} qui présentent des variations du modèle proposé par Satoshi. La plupart de ces monnaies continuent toutefois d'utiliser la Blockchain comme support d'information.
 
@@ -44,11 +44,11 @@ Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à 
 
 \section{Principe \& fonctionnement}
 
-Avant de détailler le fonctionnement de la Blockchain, il est nécessaire de définir ce qu'est une \textit{fonction de condensat} également appelé \textit{fonction de hachage}.
+Avant de détailler le fonctionnement de la Blockchain, il est nécessaire de définir ce qu'est une *fonction de condensat* également appelé *fonction de hachage*.
 
 \subsection{Fonction de condensat}
 
-Les fonctions de condensat sont utilisées en cryptographie et en informatique. Il s'agit de fonctions qui prennent en entrée une donnée et retournent une \textit{empreinte} ou une \textit{signature} de taille fixée, également appelée \textit{hash} qui garantit l'intégrité de cette donnée. La donnée peut être non seulement une liste de transactions comme dans le cas du Bitcoin, mais encore n'importe quel type d'information. Pour obtenir la signature d'une donnée, les fonctions de hachage les plus connues sont le \textit{MD5} et le \textit{SHA-256}. L'exemple ci-dessous présente les hash obtenus à partir de différentes chaînes de caractères en utilisant la fonction \textit{MD5}.
+Les fonctions de condensat sont utilisées en cryptographie et en informatique. Il s'agit de fonctions qui prennent en entrée une donnée et retournent une *empreinte* ou une *signature* de taille fixée, également appelée *hash* qui garantit l'intégrité de cette donnée. La donnée peut être non seulement une liste de transactions comme dans le cas du Bitcoin, mais encore n'importe quel type d'information. Pour obtenir la signature d'une donnée, les fonctions de hachage les plus connues sont le *MD5* et le *SHA-256*. L'exemple ci-dessous présente les hash obtenus à partir de différentes chaînes de caractères en utilisant la fonction *MD5*.
 
 \begin{wrapfigure}{L}{0.48\textwidth}
     \vspace{-20pt}
@@ -63,22 +63,22 @@ Les fonctions de hachage sont caractérisées par les trois propriétés suivant
     \item Il est facile d'obtenir le hash d'une information. Cette opération demande un temps de calcul négligeable.
     \item L'opération réciproque, c'est-à-dire reconstituer un document en fonction de son hash est au contraire impossible. Cette propriété est appelée "propriété de sens unique".
     
-    \item On appelle \textit{collision} deux empreintes identiques provenant du hachage de deux informations différentes. Pour que la fonction de condensat soit considérée comme étant de bonne qualité, il faut qu'elle limite le nombre de collision. Cette propriété est dite de "résistance aux collisions". 
+    \item On appelle *collision* deux empreintes identiques provenant du hachage de deux informations différentes. Pour que la fonction de condensat soit considérée comme étant de bonne qualité, il faut qu'elle limite le nombre de collision. Cette propriété est dite de "résistance aux collisions". 
 \end{itemize}
 
 On supposera dans la suite du document que le hash d'une information est unique. Passons maintenant à la description de la structure Blockchain.
 
 \subsection{Description de la structure Blockchain}
 
-Commençons par nous intéresser à l'élément central d'une Blockchain, le bloc. Tous les blocs de la Blockchain comportent les éléments suivants : un \textit{index}, une date de création \textit{timestamp}, de l'information \textit{data}, le hash du bloc précédent dans la Blockchain \textit{previousHash}, et le \textit{hash} de son propre bloc. Détaillons ces différents éléments.
+Commençons par nous intéresser à l'élément central d'une Blockchain, le bloc. Tous les blocs de la Blockchain comportent les éléments suivants : un *index*, une date de création *timestamp*, de l'information *data*, le hash du bloc précédent dans la Blockchain *previousHash*, et le *hash* de son propre bloc. Détaillons ces différents éléments.
 
 \subsubsection*{Index}
 
-L'\textit{index} est un numéro indiquant l'emplacement du bloc dans la liste. Le bloc d'index 0 est le premier bloc de la chaîne. Le bloc d'index 8 est le 9\textsuperscript{ème} bloc de la chaîne, et de manière générale le bloc d'index $i$ est donc le $i+1$\textsuperscript{ème} bloc de la chaîne.
+L'*index* est un numéro indiquant l'emplacement du bloc dans la liste. Le bloc d'index 0 est le premier bloc de la chaîne. Le bloc d'index 8 est le 9\textsuperscript{ème} bloc de la chaîne, et de manière générale le bloc d'index $i$ est donc le $i+1$\textsuperscript{ème} bloc de la chaîne.
 
 \subsubsection*{Timestamp}
 
-Le \textit{timestamp}, également appelé horodatage en français, sert à renseigner le moment où le bloc commence à être créé. Il existe plusieurs formats de temps. Dans le cas du Bitcoin, c'est le format de temps POSIX, très répandu en informatique, qui a été choisi. Il s'agit du nombre de secondes écoulées depuis le 1\textsuperscript{er} janvier 1970 à minuit au méridien de Greenwich. Pour une lecture du temps plus aisée, on peut choisir le standard ISO 8601. Voici un exemple de ces deux formats de temps :
+Le *timestamp*, également appelé horodatage en français, sert à renseigner le moment où le bloc commence à être créé. Il existe plusieurs formats de temps. Dans le cas du Bitcoin, c'est le format de temps POSIX, très répandu en informatique, qui a été choisi. Il s'agit du nombre de secondes écoulées depuis le 1\textsuperscript{er} janvier 1970 à minuit au méridien de Greenwich. Pour une lecture du temps plus aisée, on peut choisir le standard ISO 8601. Voici un exemple de ces deux formats de temps :
 \begin{center}
     \vspace{-15pt}
     POSIX : $1519398019$ \\
@@ -96,7 +96,7 @@ Le \textit{timestamp}, également appelé horodatage en français, sert à rense
 
 \subsubsection*{Data}
 
-Il est possible d'enregistrer dans la Blockchain des informations de toutes sortes : des transactions, des messages, des enregistrements semblables à ce que l'on peut trouver dans des bases de données ou encore des URL. Cette information est appelée \textit{data} du bloc. Elle peut être en partie ou entièrement chiffrée\footnote{Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.} afin de la sécuriser.
+Il est possible d'enregistrer dans la Blockchain des informations de toutes sortes : des transactions, des messages, des enregistrements semblables à ce que l'on peut trouver dans des bases de données ou encore des URL. Cette information est appelée *data* du bloc. Elle peut être en partie ou entièrement chiffrée\footnote{Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.} afin de la sécuriser.
 
 %https://marmelab.com/blog/2016/05/12/blockchain-expliquee-aux-developpeurs-web-la-theorie.html
 %https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54
@@ -105,11 +105,11 @@ Il est possible d'enregistrer dans la Blockchain des informations de toutes sort
 
 \subsubsection*{Hash et previousHash}
 
-Le \textit{hash} du bloc est le résultat de la fonction de condensat ayant pris en entrée l'index, le \textit{timestamp}, le \textit{previousHash} et les données du bloc. Le \textit{previousHash} quant à lui fait référence au \textit{hash} du bloc précédent dans la chaîne. 
+Le *hash* du bloc est le résultat de la fonction de condensat ayant pris en entrée l'index, le *timestamp*, le *previousHash* et les données du bloc. Le *previousHash* quant à lui fait référence au *hash* du bloc précédent dans la chaîne. 
 
-Une fois le \textit{hash} calculé il n'est plus possible de modifier l'index, le \textit{previousHash}, le \textit{timestamp} ou les données. Une modification, même infime, de leurs contenus entraînerai la génération d'un \textit{hash} différent. C'est cette propriété qui assure l'intégrité du bloc. Pour s'assurer qu'un bloc n'est pas corrompu, il suffit de vérifier que son \textit{hash} est égal au résultat de la fonction de condensat des éléments du bloc. 
+Une fois le *hash* calculé il n'est plus possible de modifier l'index, le *previousHash*, le *timestamp* ou les données. Une modification, même infime, de leurs contenus entraînerai la génération d'un *hash* différent. C'est cette propriété qui assure l'intégrité du bloc. Pour s'assurer qu'un bloc n'est pas corrompu, il suffit de vérifier que son *hash* est égal au résultat de la fonction de condensat des éléments du bloc. 
 
-De plus, le \textit{previousHash} est une donnée utilisée dans la génération du \textit{hash}. De cette façon on scelle le lien entre le bloc et son prédécesseur, créant ainsi une Blockchain, une chaîne de blocs ordonnés.
+De plus, le *previousHash* est une donnée utilisée dans la génération du *hash*. De cette façon on scelle le lien entre le bloc et son prédécesseur, créant ainsi une Blockchain, une chaîne de blocs ordonnés.
 
 \begin{figure}[!h]
     \centering
@@ -141,30 +141,30 @@ De plus, le \textit{previousHash} est une donnée utilisée dans la génération
 
 \subsection{Mise en \oeuvre de la Blockchain}
 
-On appelle \textit{réseau} un ensemble de \textit{\noeuds}reliés ensembles et communicant entre eux. Chaque \noeud possède une copie de la Blockchain. Un \noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau \noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des \noeuds qui produisent les nouveaux blocs sont appelés \textit{mineurs} et le processus de création se nomme \textit{le minage}.
+On appelle *réseau* un ensemble de *\noeuds*reliés ensembles et communicant entre eux. Chaque \noeud possède une copie de la Blockchain. Un \noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau \noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des \noeuds qui produisent les nouveaux blocs sont appelés *mineurs* et le processus de création se nomme *le minage*.
 
 On distingue trois types de Blockchain. Elles se différencient en fonction de l'attribution du droit de minage : 
 \begin{itemize}
-    \item Dans les \textit{Blockchain publiques}, tout le monde peut devenir un \noeud du réseau et un mineur, il n'y a aucune restriction.
-    \item Dans les \textit{Blockchain privées}, il faut une première autorisation pour devenir un \noeud du réseau et une deuxième pour devenir un mineur.
-    \item Il existe enfin des \textit{Blockchain hybrides} qui allient les aspects publics et privés.
+    \item Dans les *Blockchain publiques*, tout le monde peut devenir un \noeud du réseau et un mineur, il n'y a aucune restriction.
+    \item Dans les *Blockchain privées*, il faut une première autorisation pour devenir un \noeud du réseau et une deuxième pour devenir un mineur.
+    \item Il existe enfin des *Blockchain hybrides* qui allient les aspects publics et privés.
 \end{itemize}
 
 \subsubsection{Principe du Minage}
 
 
-Chaque mineur construit un bloc dit \textit{local}, c'est-à-dire qu'il construit un bloc à partir des informations dont il a connaissance. Dans le cas du Bitcoin, chaque mineur enregistre les transactions dans l'ordre dans lequel elles lui parviennent. Cet ordre peut être différent d'un mineur à l'autre. On peut généraliser en appelant \textit{faits} les informations transitant sur le réseau et collectées par les mineurs.
+Chaque mineur construit un bloc dit *local*, c'est-à-dire qu'il construit un bloc à partir des informations dont il a connaissance. Dans le cas du Bitcoin, chaque mineur enregistre les transactions dans l'ordre dans lequel elles lui parviennent. Cet ordre peut être différent d'un mineur à l'autre. On peut généraliser en appelant *faits* les informations transitant sur le réseau et collectées par les mineurs.
 
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.8]{blocks_facts.png}
-    \caption{Les \textit{confirmed facts} sont les faits confirmés et inscrits dans la Blockchain, les \textit{pending facts} sont les faits qui ne sont pas encore enregistrés.}
+    \caption{Les *confirmed facts* sont les faits confirmés et inscrits dans la Blockchain, les *pending facts* sont les faits qui ne sont pas encore enregistrés.}
     \label{fig:my_label}
 \end{figure}
 
 Les mineurs disposent d'un file d'attente dans laquelle ils placent les faits. L'ordre des faits est déterminer en fonction de leur arrivés. A la construction des données du bloc local, les faits de la file d'attente y sont copiés.
 
-Reste maintenant à établir quel bloc local va devenir le nouveau bloc de la Blockchain. Il existe différents types de \textit{consensus} également appelés \textit{preuve}. Sur le schéma ci-dessous, le nouveau bloc est choisi de façon aléatoire. Chaque mineur lance une paire de dés, on relance les dés jusqu'à ce que l'un des mineurs obtienne un double six. C'est alors son bloc qui est choisi pour être ajouté à la Blockchain.
+Reste maintenant à établir quel bloc local va devenir le nouveau bloc de la Blockchain. Il existe différents types de *consensus* également appelés *preuve*. Sur le schéma ci-dessous, le nouveau bloc est choisi de façon aléatoire. Chaque mineur lance une paire de dés, on relance les dés jusqu'à ce que l'un des mineurs obtienne un double six. C'est alors son bloc qui est choisi pour être ajouté à la Blockchain.
 
 \begin{figure}[!h]
     \centering
@@ -177,9 +177,9 @@ Reste maintenant à établir quel bloc local va devenir le nouveau bloc de la Bl
 Il existe différentes types preuves : 
 
 \begin{itemize}
-    \item La \textit{preuve d'autorité}, également appelé \textit{proof of authority}, consiste à ne donner le droit de miner qu'à un petit groupe de \noeuds ayant la confiance du réseau. Cette méthode est majoritairement employée dans les Blockchains privées.
-    \item La \textit{preuve de travail}, appelé \textit{proof of work} en anglais, est la plus répandue. Elle consiste à demander aux mineurs qui souhaitent soumettre un bloc de résoudre un problème non seulement long et difficile, mais encore nécessitant une puissance de calcul importante. Le premier mineur qui résout l'énigme voit son bloc sélectionné pour être le nouveau bloc de la Blockchain. Dans le cas du Bitcoin, on demande aux mineurs de générer un \textit{hash} commençant par un nombre donné de zéros. Il est nécessaire de hacher un grand nombre de chaîne de caractères avant de trouver un \textit{hash} valide. Cette preuve est très utilisée dans les Blockchains publiques.
-    \item La \textit{preuve d'enjeu}, \textit{proof of stake}, se présente comme une alternative à la preuve de travail. Les mineurs disposent de jetons qu'ils peuvent mettre en dépôt, lors du consensus, l'un des jetons du dépôt est choisi aléatoirement, c'est le mineur auquel il appartient qui doit produire le prochain bloc. S'il ne produit pas le bloc dans le temps imparti, c'est un autre jeton qui est sélectionné. Un mineur peut augmenter ses chances d'être sélectionné en déposant un grand nombre de jetons. Cette preuve est de plus en plus usitée dans les Blockchains publiques.
+    \item La *preuve d'autorité*, également appelé *proof of authority*, consiste à ne donner le droit de miner qu'à un petit groupe de \noeuds ayant la confiance du réseau. Cette méthode est majoritairement employée dans les Blockchains privées.
+    \item La *preuve de travail*, appelé *proof of work* en anglais, est la plus répandue. Elle consiste à demander aux mineurs qui souhaitent soumettre un bloc de résoudre un problème non seulement long et difficile, mais encore nécessitant une puissance de calcul importante. Le premier mineur qui résout l'énigme voit son bloc sélectionné pour être le nouveau bloc de la Blockchain. Dans le cas du Bitcoin, on demande aux mineurs de générer un *hash* commençant par un nombre donné de zéros. Il est nécessaire de hacher un grand nombre de chaîne de caractères avant de trouver un *hash* valide. Cette preuve est très utilisée dans les Blockchains publiques.
+    \item La *preuve d'enjeu*, *proof of stake*, se présente comme une alternative à la preuve de travail. Les mineurs disposent de jetons qu'ils peuvent mettre en dépôt, lors du consensus, l'un des jetons du dépôt est choisi aléatoirement, c'est le mineur auquel il appartient qui doit produire le prochain bloc. S'il ne produit pas le bloc dans le temps imparti, c'est un autre jeton qui est sélectionné. Un mineur peut augmenter ses chances d'être sélectionné en déposant un grand nombre de jetons. Cette preuve est de plus en plus usitée dans les Blockchains publiques.
 \end{itemize}
 
 %Les faits non sélectionnés ?
@@ -198,7 +198,7 @@ Les \noeuds sont amenés à vérifier l'intégrité de leur Blockchain. Il y a d
 
 À la réception d'un nouveau bloc, chaque \noeud doit vérifier que l'intégrité du bloc reçu n'a pas été altérée. Pour ce faire, on calcule le hash du bloc via la fonction de condensat, et on compare l'empreinte obtenue avec l'empreinte attachée au bloc. Si elles sont identiques, le \noeud peut ajouter le bloc à sa Blockchain; en revanche, si une anomalie est détectée, le \noeud doit demander à un autre \noeud du réseau de lui renvoyer le bloc.
 
-À intervalles de temps réguliers, les \noeuds doivent également vérifier que l'intégralité de leur chaîne est correcte. On vérifie alors chaque bloc de la même manière que pour les nouveaux blocs à ajouter en partant du dernier bloc et en remontant la chaîne via le \textit{previousHash}. S’il y a un ou plusieurs blocs corrompus, le \noeud demande à un des autres \noeuds du réseau de lui renvoyer la Blockchain à partir du bloc non fiable le plus ancien. % le plus haut dans la liste ?.
+À intervalles de temps réguliers, les \noeuds doivent également vérifier que l'intégralité de leur chaîne est correcte. On vérifie alors chaque bloc de la même manière que pour les nouveaux blocs à ajouter en partant du dernier bloc et en remontant la chaîne via le *previousHash*. S’il y a un ou plusieurs blocs corrompus, le \noeud demande à un des autres \noeuds du réseau de lui renvoyer la Blockchain à partir du bloc non fiable le plus ancien. % le plus haut dans la liste ?.
 
 %https://www.technologies-ebusiness.com/enjeux-et-tendances/benefices-de-preuve-dautorite-proof-of-authority-poa
 %https://www.ethereum-france.com/quest-ce-que-la-preuve-denjeu-proof-of-stake-faq-par-v-buterin-traduction-francaise/
@@ -245,7 +245,7 @@ Dans notre cas cela donnerait :
 
 \vspace{1em}
 
-Dans le cas de l'usage d'une Blockchain, il devient possible de réduire les intermédiaires comme les juristes. De plus, ce type de contrat peut remplacer les \textit{tiers de confiance} comme les banques qui servent habituellement de garants afin de verrouiller les fonds le temps de la transaction.
+Dans le cas de l'usage d'une Blockchain, il devient possible de réduire les intermédiaires comme les juristes. De plus, ce type de contrat peut remplacer les *tiers de confiance* comme les banques qui servent habituellement de garants afin de verrouiller les fonds le temps de la transaction.
 
 %\subsection{}
 
@@ -268,7 +268,7 @@ En fonction du nombre de \noeuds sur le réseau, certains problèmes peuvent ém
 %http://www.agoravox.fr/actualites/economie/article/les-cryptomonnaies-du-futur-189712
 %https://www.fournisseur-energie.com/monnaies-numeriques-impact-ecologique/
 
-Beaucoup de détracteurs de la Blockchain lui reprochent son coût énergétique. Il s'agit là d'un double amalgame. En effet ce n'est pas la Blockchain en elle-même qui nécessite beaucoup de ressource, c'est éventuellement la preuve de travail. Il s'agit en réalité plus d'un problème propre aux cryptomonnaies car la difficulté de la preuve de travail est augmentée régulièrement. Cette augmentation de la difficulté entraîne la consommation de ressources machines toujours plus importantes. Il est possible d'utiliser la preuve de travail sans connaître de coût énergétique excessif. De même, il existe d'autres preuves pouvant être adoptées. Il suffit de prendre pour exemple la monnaie virtuelle \textit{Ğ1} dont l'impact carbone est très faible car ce n'est pas le minage qui génère la création de monnaie\footnote{La description de la monnaie \textit{Ğ1} ainsi que son mode de fonctionnement sont décrit à l'adresse : \url{https://duniter.org/fr/duniter-pourquoi-comment/}.}. 
+Beaucoup de détracteurs de la Blockchain lui reprochent son coût énergétique. Il s'agit là d'un double amalgame. En effet ce n'est pas la Blockchain en elle-même qui nécessite beaucoup de ressource, c'est éventuellement la preuve de travail. Il s'agit en réalité plus d'un problème propre aux cryptomonnaies car la difficulté de la preuve de travail est augmentée régulièrement. Cette augmentation de la difficulté entraîne la consommation de ressources machines toujours plus importantes. Il est possible d'utiliser la preuve de travail sans connaître de coût énergétique excessif. De même, il existe d'autres preuves pouvant être adoptées. Il suffit de prendre pour exemple la monnaie virtuelle *Ğ1* dont l'impact carbone est très faible car ce n'est pas le minage qui génère la création de monnaie\footnote{La description de la monnaie *Ğ1* ainsi que son mode de fonctionnement sont décrit à l'adresse : \url{https://duniter.org/fr/duniter-pourquoi-comment/}.}. 
 
 %https://bitconnect.co/bitcoin-news/119/top-5-blockchain-technology-myths-the-mainstream-has-fallen-for
 
