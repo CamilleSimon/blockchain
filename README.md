@@ -7,9 +7,8 @@ Camille Simon, Master 2 IWOCS Université Le Havre Normandie
 
 Fin 2017, le cours de la monnaie virtuelle *Bitcoin* s'envole. Cette étrange devise, peu connue du grand public, se retrouve à la une de tous les média. Commence alors la diffusion des termes *Bitcoin*, *Blockchain* et *cryptomonnaies* dans le vocabulaire courant. Mais que désignent ces mots ? Dans cette introduction, nous définirons le vocabulaire essentiel.
 
-<img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/schema-monnaies.png" height="250">
-
-**Figure 1 :** Diagramme des monnaies
+><img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/schema-monnaies.png" height="250">
+>**Figure 1 :** Diagramme des monnaies
 
 On appelle *monnaie* une unité qui sert à exprimer le prix des objets ou des services. Le *Bitcoin* est une *cryptomonnaie*. Les *cryptomonnaies* sont caractérisées par l'utilisation de procédés cryptographiques ainsi que par l'implication des utilisateurs dans la création et l'échange de la monnaie. Le Bitcoin fait partie des *monnaies virtuelles*. Elles se différencient des monnaies que nous connaissons<sup>1</sup>, comme l'euro, la monnaie unique de l'Union Européenne, du fait qu'elles n'ont pas de réalité physique. Si vous souhaitez acheter une baguette de pain en euro, vous pouvez le faire à l'aide de pièces ou de billets ayant une valeur fixée. Mais, ce n'est pas le cas avec la monnaie Bitcoin, car elle n'a pas de forme tangible. Les Bitcoins sont stockés sur des supports numériques (clé USB, ordinateur, smart phone,...) et échangés à travers un réseau décentralisé. De manière générale, on appelle *transaction* le fait de réaliser une opération financière. Les transactions réalisées avec des Bitcoins sont consignées dans un grand "registre" public appelé *Blockchain*. 
 
