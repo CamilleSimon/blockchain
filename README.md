@@ -10,7 +10,8 @@ Fin 2017, le cours de la monnaie virtuelle *Bitcoin* s'envole. Cette étrange de
 <p align="center">
   <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/schema-monnaies.png" height="250"/>
 </p>
-**Figure 1 :** Diagramme des monnaies
+
+<b>Figure 1 :</b> Diagramme des monnaies
 
 On appelle *monnaie* une unité qui sert à exprimer le prix des objets ou des services. Le *Bitcoin* est une *cryptomonnaie*. Les *cryptomonnaies* sont caractérisées par l'utilisation de procédés cryptographiques ainsi que par l'implication des utilisateurs dans la création et l'échange de la monnaie. Le Bitcoin fait partie des *monnaies virtuelles*. Elles se différencient des monnaies que nous connaissons<sup>1</sup>, comme l'euro, la monnaie unique de l'Union Européenne, du fait qu'elles n'ont pas de réalité physique. Si vous souhaitez acheter une baguette de pain en euro, vous pouvez le faire à l'aide de pièces ou de billets ayant une valeur fixée. Mais, ce n'est pas le cas avec la monnaie Bitcoin, car elle n'a pas de forme tangible. Les Bitcoins sont stockés sur des supports numériques (clé USB, ordinateur, smart phone,...) et échangés à travers un réseau décentralisé. De manière générale, on appelle *transaction* le fait de réaliser une opération financière. Les transactions réalisées avec des Bitcoins sont consignées dans un grand "registre" public appelé *Blockchain*. 
 
