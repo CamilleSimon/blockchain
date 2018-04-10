@@ -23,13 +23,15 @@ La technologie Blockchain a été évoquée pour la première fois en 2008 dans 
 
 Pendant les deux années suivantes Satoshi met en place la monnaie Bitcoin. Il crée notamment un logiciel intitulé *Bitcoin-QT* permettant de créer des unités monétaires. Avec le Bitcoin, Satoshi Nakamoto essaie de mettre à l'épreuve le raisonnement qu'il a exprimé dans son article. Il choisit de reproduire le modèle des ressources naturelles finies comme les métaux. C'est-à-dire qu'il fait en sorte que les utilisateurs ne puissent produire qu'un nombre déterminé de Bitcoin.
 
-Son expérience inspire entre 2013 et 2014 une multitude d'autres monnaies\footnote{Le site BitCoin.org a tenté de faire une liste des monnaies virtuelles : [https://bitcoin.fr/une-classification-des-monnaies-decentralisees/](https://bitcoin.fr/une-classification-des-monnaies-decentralisees/) qui présentent des variations du modèle proposé par Satoshi. La plupart de ces monnaies continuent toutefois d'utiliser la Blockchain comme support d'information.
+Son expérience inspire entre 2013 et 2014 une multitude d'autres monnaies<sup>3</sup> qui présentent des variations du modèle proposé par Satoshi. La plupart de ces monnaies continuent toutefois d'utiliser la Blockchain comme support d'information.
 
-Le Bitcoin n'est connu que d'un petit nombre d'internautes jusqu'au mois de novembre 2017 où les spéculateurs s'en emparent. À partir de ce moment-là, le taux d'échange du Bitcoin vers les monnaies dettes explose\footnote{Le cours du Bitcoin en temps réel peut être suivi sur : [https://bitcoin.fr/Cours-du-bitcoin/](https://bitcoin.fr/Cours-du-bitcoin/). Cette hausse spectaculaire du cours du Bitcoin est due à l'intérêt grandissant des banques pour cette nouvelle devise.
+Le Bitcoin n'est connu que d'un petit nombre d'internautes jusqu'au mois de novembre 2017 où les spéculateurs s'en emparent. À partir de ce moment-là, le taux d'échange du Bitcoin vers les monnaies dettes explose<sup>4</sup>. Cette hausse spectaculaire du cours du Bitcoin est due à l'intérêt grandissant des banques pour cette nouvelle devise.
 
 Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à s'intéresser au fonctionnement de la cryptomonnaie et de la Blockchain. Les entreprises se rendent alors compte du potentiel que représente la Blockchain.
 
 <sup>2</sup> **Nakamoto**, Satoshi (2008). *Bitcoin: A Peer-to-Peer Electronic Cash System*. Consultable en ligne : [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf) (Consulté le 27/02/2018).
+<sup>3</sup> Le site BitCoin.org a tenté de faire une liste des monnaies virtuelles : [https://bitcoin.fr/une-classification-des-monnaies-decentralisees/](https://bitcoin.fr/une-classification-des-monnaies-decentralisees/)
+<sup>4</sup>Le cours du Bitcoin en temps réel peut être suivi sur : [https://bitcoin.fr/Cours-du-bitcoin/](https://bitcoin.fr/Cours-du-bitcoin/)
 
 ## Principe & fonctionnement
 
