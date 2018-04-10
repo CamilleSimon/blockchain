@@ -94,7 +94,7 @@ Une fois le *hash* calculé il n'est plus possible de modifier l'index, le *prev
 De plus, le *previousHash* est une donnée utilisée dans la génération du *hash*. De cette façon on scelle le lien entre le bloc et son prédécesseur, créant ainsi une Blockchain, une chaîne de blocs ordonnés.
 
 <p align="center">
-  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/blockchain.png" height="150"/>
+  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/blockchain.png" height="100"/>
 </p>
 <p align="center">
   <b>Figure 3 :</b> Chaîne de blocs.
