@@ -94,7 +94,7 @@ Une fois le *hash* calculé il n'est plus possible de modifier l'index, le *prev
 De plus, le *previousHash* est une donnée utilisée dans la génération du *hash*. De cette façon on scelle le lien entre le bloc et son prédécesseur, créant ainsi une Blockchain, une chaîne de blocs ordonnés.
 
 <p align="center">
-  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/blockchain.png" height="250"/>
+  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/blockchain.png" height="150"/>
 </p>
 <p align="center">
   <b>Figure 3 :</b> Chaîne de blocs.
@@ -104,14 +104,12 @@ De plus, le *previousHash* est une donnée utilisée dans la génération du *ha
 
 ### Mise en oeuvre de la Blockchain
 
-On appelle *réseau* un ensemble de *\noeuds*reliés ensembles et communicant entre eux. Chaque \noeud possède une copie de la Blockchain. Un \noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau \noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des \noeuds qui produisent les nouveaux blocs sont appelés *mineurs* et le processus de création se nomme *le minage*.
+On appelle *réseau* un ensemble de *noeuds* reliés ensembles et communicant entre eux. Chaque noeud possède une copie de la Blockchain. Un noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des noeuds qui produisent les nouveaux blocs sont appelés *mineurs* et le processus de création se nomme *le minage*.
 
 On distingue trois types de Blockchain. Elles se différencient en fonction de l'attribution du droit de minage : 
-\begin{itemize}
-    \item Dans les *Blockchain publiques*, tout le monde peut devenir un \noeud du réseau et un mineur, il n'y a aucune restriction.
-    \item Dans les *Blockchain privées*, il faut une première autorisation pour devenir un \noeud du réseau et une deuxième pour devenir un mineur.
-    \item Il existe enfin des *Blockchain hybrides* qui allient les aspects publics et privés.
-\end{itemize}
+* Dans les *Blockchain publiques*, tout le monde peut devenir un noeud du réseau et un mineur, il n'y a aucune restriction.
+* Dans les *Blockchain privées*, il faut une première autorisation pour devenir un noeud du réseau et une deuxième pour devenir un mineur.
+* Il existe enfin des *Blockchain hybrides* qui allient les aspects publics et privés.
 
 #### Principe du Minage
 
@@ -138,25 +136,23 @@ Reste maintenant à établir quel bloc local va devenir le nouveau bloc de la Bl
 
 Il existe différentes types preuves : 
 
-\begin{itemize}
-    \item La *preuve d'autorité*, également appelé *proof of authority*, consiste à ne donner le droit de miner qu'à un petit groupe de \noeuds ayant la confiance du réseau. Cette méthode est majoritairement employée dans les Blockchains privées.
-    \item La *preuve de travail*, appelé *proof of work* en anglais, est la plus répandue. Elle consiste à demander aux mineurs qui souhaitent soumettre un bloc de résoudre un problème non seulement long et difficile, mais encore nécessitant une puissance de calcul importante. Le premier mineur qui résout l'énigme voit son bloc sélectionné pour être le nouveau bloc de la Blockchain. Dans le cas du Bitcoin, on demande aux mineurs de générer un *hash* commençant par un nombre donné de zéros. Il est nécessaire de hacher un grand nombre de chaîne de caractères avant de trouver un *hash* valide. Cette preuve est très utilisée dans les Blockchains publiques.
-    \item La *preuve d'enjeu*, *proof of stake*, se présente comme une alternative à la preuve de travail. Les mineurs disposent de jetons qu'ils peuvent mettre en dépôt, lors du consensus, l'un des jetons du dépôt est choisi aléatoirement, c'est le mineur auquel il appartient qui doit produire le prochain bloc. S'il ne produit pas le bloc dans le temps imparti, c'est un autre jeton qui est sélectionné. Un mineur peut augmenter ses chances d'être sélectionné en déposant un grand nombre de jetons. Cette preuve est de plus en plus usitée dans les Blockchains publiques.
-\end{itemize}
+* La *preuve d'autorité*, également appelé *proof of authority*, consiste à ne donner le droit de miner qu'à un petit groupe de \noeuds ayant la confiance du réseau. Cette méthode est majoritairement employée dans les Blockchains privées.
+* La *preuve de travail*, appelé *proof of work* en anglais, est la plus répandue. Elle consiste à demander aux mineurs qui souhaitent soumettre un bloc de résoudre un problème non seulement long et difficile, mais encore nécessitant une puissance de calcul importante. Le premier mineur qui résout l'énigme voit son bloc sélectionné pour être le nouveau bloc de la Blockchain. Dans le cas du Bitcoin, on demande aux mineurs de générer un *hash* commençant par un nombre donné de zéros. Il est nécessaire de hacher un grand nombre de chaîne de caractères avant de trouver un *hash* valide. Cette preuve est très utilisée dans les Blockchains publiques.
+* La *preuve d'enjeu*, *proof of stake*, se présente comme une alternative à la preuve de travail. Les mineurs disposent de jetons qu'ils peuvent mettre en dépôt, lors du consensus, l'un des jetons du dépôt est choisi aléatoirement, c'est le mineur auquel il appartient qui doit produire le prochain bloc. S'il ne produit pas le bloc dans le temps imparti, c'est un autre jeton qui est sélectionné. Un mineur peut augmenter ses chances d'être sélectionné en déposant un grand nombre de jetons. Cette preuve est de plus en plus usitée dans les Blockchains publiques.
 
 Bien sûr, il existe d'autres preuves : des preuves aléatoires comme celle présentée sur la figure 4 ou des preuves sélectionnant le bloc de longueur maximale.
 
-Après la sélection d'un bloc local comme nouveau bloc de la Blockchain, ce dernier est envoyé à l'ensemble des \noeuds du réseau. Lorsqu'un \noeud reçoit le nouveau bloc, il va supprimé de sa file d'attente les faits présent dans le bloc. Il évite ainsi le risque qu'une information soit présente plusieurs fois dans la Blockchain. Une fois cette opération réalisée, les faits présent dans la file d'attente vont constituer les données du bloc local. On retourne ainsi au début du processus.
+Après la sélection d'un bloc local comme nouveau bloc de la Blockchain, ce dernier est envoyé à l'ensemble des noeuds du réseau. Lorsqu'un noeud reçoit le nouveau bloc, il va supprimé de sa file d'attente les faits présent dans le bloc. Il évite ainsi le risque qu'une information soit présente plusieurs fois dans la Blockchain. Une fois cette opération réalisée, les faits présent dans la file d'attente vont constituer les données du bloc local. On retourne ainsi au début du processus.
 
 #### Validation de la chaîne
 
-Les \noeuds sont amenés à vérifier l'intégrité de leur Blockchain. Il y a deux vérifications à effectuer : une première afin de s'assurer que la Blockchain n'a pas été modifiée localement et une seconde s'assurant que tous les \noeuds disposent de la même Blockchain.
+Les noeuds sont amenés à vérifier l'intégrité de leur Blockchain. Il y a deux vérifications à effectuer : une première afin de s'assurer que la Blockchain n'a pas été modifiée localement et une seconde s'assurant que tous les noeuds disposent de la même Blockchain.
 
 **Vérification locale**
 
-À la réception d'un nouveau bloc, chaque \noeud doit vérifier que l'intégrité du bloc reçu n'a pas été altérée. Pour ce faire, on calcule le hash du bloc via la fonction de condensat, et on compare l'empreinte obtenue avec l'empreinte attachée au bloc. Si elles sont identiques, le \noeud peut ajouter le bloc à sa Blockchain; en revanche, si une anomalie est détectée, le \noeud doit demander à un autre \noeud du réseau de lui renvoyer le bloc.
+À la réception d'un nouveau bloc, chaque \noeud doit vérifier que l'intégrité du bloc reçu n'a pas été altérée. Pour ce faire, on calcule le hash du bloc via la fonction de condensat, et on compare l'empreinte obtenue avec l'empreinte attachée au bloc. Si elles sont identiques, le noeud peut ajouter le bloc à sa Blockchain; en revanche, si une anomalie est détectée, le \noeud doit demander à un autre \noeud du réseau de lui renvoyer le bloc.
 
-À intervalles de temps réguliers, les \noeuds doivent également vérifier que l'intégralité de leur chaîne est correcte. On vérifie alors chaque bloc de la même manière que pour les nouveaux blocs à ajouter en partant du dernier bloc et en remontant la chaîne via le *previousHash*. S’il y a un ou plusieurs blocs corrompus, le \noeud demande à un des autres \noeuds du réseau de lui renvoyer la Blockchain à partir du bloc non fiable le plus ancien. % le plus haut dans la liste ?.
+À intervalles de temps réguliers, les \noeuds doivent également vérifier que l'intégralité de leur chaîne est correcte. On vérifie alors chaque bloc de la même manière que pour les nouveaux blocs à ajouter en partant du dernier bloc et en remontant la chaîne via le *previousHash*. S’il y a un ou plusieurs blocs corrompus, le \noeud demande à un des autres \noeuds du réseau de lui renvoyer la Blockchain à partir du bloc non fiable le plus ancien.
 
 **Vérification à l'échelle du réseau**
 
@@ -170,9 +166,6 @@ Les domaines d'applications de la Blockchain sont variés : banque, finance, ass
 
 Le premier usage que l'on trouve à la Blockchain est celui pour lequel elle a été conçue : enregistrer de l'information de façon pérenne. En effet, la structure en liste ordonnée dans le temps permet de stocker les informations de façon chronologique. On peut donc utiliser la Blockchain pour toutes les applications du type registre, par exemple registres d'état civil, registres matrimoniaux, registres des naissances, lois, etc.
 Par extension, elle peut également garder trace des transactions ou transferts d'informations, par exemple pour les registres bancaires et financiers, registres de bibliothèques, etc.
-
-%Pérennité => papier description
-%Registre d'état civil => naissance & décès
 
 ### Smart Contrat
 
@@ -280,10 +273,3 @@ SQLI. «Les bénéfices de la Preuve d’Autorité - Proof-of-Authority (PoA)».
 webadmin. «Digmasbord raconte l’histoire de la blockchain Part1». Projet Digmasbord (blog), 24 février 2018. \url{https://www.meteo-blockchain.fr/digmasbord-blockchain/l-histoire-de-la-blockchain/}.
 
 Zaninotto, François. «La blockchain expliquée aux développeurs web, partie 1: la théorie». Consulté le 5 mars 2018. \url{https://marmelab.com/blog/2016/05/12/blockchain-expliquee-aux-developpeurs-web-la-theorie.html}.
-
-
-\end{document}
-
-%idée d'implémentation :
-%- ssd => lire/écrire/executer le + vite possible OU ram importante
-%- monter dans le /tmp
