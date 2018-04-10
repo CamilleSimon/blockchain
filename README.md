@@ -19,15 +19,17 @@ Pour répondre à ces questions, le présent rapport commencera par présenter u
 
 ## Rappel historique
 
-La technologie Blockchain a été évoquée pour la première fois en 2008 dans un article intitulé *Bitcoin: A Peer-to-Peer Electronic Cash System*\footnote{\textbf{Nakamoto}, Satoshi (2008). *Bitcoin: A Peer-to-Peer Electronic Cash System*. Consultable en ligne : \url{https://bitcoin.org/bitcoin.pdf} (Consulté le 27/02/2018).} écrit par Satoshi Nakamoto. Il y présente son idée de création d'une monnaie décentralisée et dont les transactions seraient totalement transparentes. Il appelle Blockchain le support d'information enregistrant l'ensemble des transactions de façon transparente, anonyme et sécurisée.
+La technologie Blockchain a été évoquée pour la première fois en 2008 dans un article intitulé *Bitcoin: A Peer-to-Peer Electronic Cash System*<sup>2</sup> écrit par Satoshi Nakamoto. Il y présente son idée de création d'une monnaie décentralisée et dont les transactions seraient totalement transparentes. Il appelle Blockchain le support d'information enregistrant l'ensemble des transactions de façon transparente, anonyme et sécurisée.
 
 Pendant les deux années suivantes Satoshi met en place la monnaie Bitcoin. Il crée notamment un logiciel intitulé *Bitcoin-QT* permettant de créer des unités monétaires. Avec le Bitcoin, Satoshi Nakamoto essaie de mettre à l'épreuve le raisonnement qu'il a exprimé dans son article. Il choisit de reproduire le modèle des ressources naturelles finies comme les métaux. C'est-à-dire qu'il fait en sorte que les utilisateurs ne puissent produire qu'un nombre déterminé de Bitcoin.
 
-Son expérience inspire entre 2013 et 2014 une multitude d'autres monnaies\footnote{Le site BitCoin.org a tenté de faire une liste des monnaies virtuelles : \url{https://bitcoin.fr/une-classification-des-monnaies-decentralisees/}} qui présentent des variations du modèle proposé par Satoshi. La plupart de ces monnaies continuent toutefois d'utiliser la Blockchain comme support d'information.
+Son expérience inspire entre 2013 et 2014 une multitude d'autres monnaies\footnote{Le site BitCoin.org a tenté de faire une liste des monnaies virtuelles : [https://bitcoin.fr/une-classification-des-monnaies-decentralisees/](https://bitcoin.fr/une-classification-des-monnaies-decentralisees/) qui présentent des variations du modèle proposé par Satoshi. La plupart de ces monnaies continuent toutefois d'utiliser la Blockchain comme support d'information.
 
-Le Bitcoin n'est connu que d'un petit nombre d'internautes jusqu'au mois de novembre 2017 où les spéculateurs s'en emparent. À partir de ce moment-là, le taux d'échange du Bitcoin vers les monnaies dettes explose\footnote{Le cours du Bitcoin en temps réel peut être suivi sur : \url{https://bitcoin.fr/Cours-du-bitcoin/}}. Cette hausse spectaculaire du cours du Bitcoin est due à l'intérêt grandissant des banques pour cette nouvelle devise.
+Le Bitcoin n'est connu que d'un petit nombre d'internautes jusqu'au mois de novembre 2017 où les spéculateurs s'en emparent. À partir de ce moment-là, le taux d'échange du Bitcoin vers les monnaies dettes explose\footnote{Le cours du Bitcoin en temps réel peut être suivi sur : [https://bitcoin.fr/Cours-du-bitcoin/](https://bitcoin.fr/Cours-du-bitcoin/). Cette hausse spectaculaire du cours du Bitcoin est due à l'intérêt grandissant des banques pour cette nouvelle devise.
 
 Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à s'intéresser au fonctionnement de la cryptomonnaie et de la Blockchain. Les entreprises se rendent alors compte du potentiel que représente la Blockchain.
+
+<sup>2</sup> **Nakamoto**, Satoshi (2008). *Bitcoin: A Peer-to-Peer Electronic Cash System*. Consultable en ligne : [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf) (Consulté le 27/02/2018).
 
 ## Principe & fonctionnement
 
