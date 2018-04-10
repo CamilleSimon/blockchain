@@ -1,5 +1,5 @@
 # La technologie Blockchain
-Camille Simon, Master 2 IWOCS Université Le Havre Normandie
+Camille Simon <div style="text-align:right;">Master 2 IWOCS Université Le Havre Normandie</div>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>.
 
