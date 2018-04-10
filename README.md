@@ -213,65 +213,72 @@ Cette technologie, relativement récente, est pour l'heure peu documentée. La B
 
 ## Bibliographie
 
-2016, GODEBARGE Ferréol, ROSSAT R, et Godebarge Ferréol, Rossat Romain. «Principes clés d’une application blockchain», 15 décembre 2016. \url{http://data.em-lyon.com/wp-content/uploads/2017/01/GODEBARGE_ROSSAT_Blockchain-version-finale.pdf}.
+### Documents en ligne
 
-«Attaque Sybil». \textit{Wikipédia}, 19 mai 2017. \url{https://fr.wikipedia.org/w/index.php?title=Attaque_Sybil&oldid=137477672}.
+**GODEBARGE** Ferréol et **ROSSAT** Romain. «Principes clés d’une application blockchain», 15 décembre 2016. [http://data.em-lyon.com/wp-content/uploads/2017/01/GODEBARGE_ROSSAT_Blockchain-version-finale.pdf](http://data.em-lyon.com/wp-content/uploads/2017/01/GODEBARGE_ROSSAT_Blockchain-version-finale.pdf).
 
-Axiaman. «Les cryptomonnaies du futur». AgoraVox, 15 février 2017. \url{http://www.agoravox.fr/actualites/economie/article/les-cryptomonnaies-du-futur-189712}.
+**GUEGAN**, Dominique . «Blockchain publique et contrats intelligents (Smart Contrats). Les possibilités
+ouvertes par Ethéreum... et ses limites». Documents de travail du Centre d’Economie de la Sorbonne
+2017.57 - ISSN: 1955-611X. 2017. <halshs-01673329>. [https://halshs.archives-ouvertes.fr/halshs-01673329/file/17057.pdf](https://halshs.archives-ouvertes.fr/halshs-01673329/file/17057.pdf).
 
-Bitcoin. «Une classification des monnaies décentralisées – Bitcoin.fr». Bitcoin.fr, 10 février 2015. \url{https://bitcoin.fr/une-classification-des-monnaies-decentralisees/}.
+**LABORDE**, Stéphane. Théorie Relative de la Monnaie v2.718, 2012. [http://trm.creationmonetaire.info/](http://trm.creationmonetaire.info/).
 
-«Bitcoin.Com». Consulté le 5 mars 2018. \url{https://charts.bitcoin.com/chart/blockchain-size}.
+**MALONE** David, **O'DWYER** Karl. «Bitcoin Mining and its Energy Footprint». *Hamilton Institute National University of Ireland Maynooth*, 26 juin 2014. [http://karlodwyer.com/publications/pdf/bitcoin_KJOD_2014.pdf](http://karlodwyer.com/publications/pdf/bitcoin_KJOD_2014.pdf).
 
-Bitconnect.co. «Top 5 Blockchain Technology Myths the Mainstream Has Fallen For | Bitconnect». Bitconnect.co. Consulté le 5 mars 2018. \url{https://bitconnect.co/bitcoin-news/119/top-5-blockchain-technology-myths-the-mainstream-has-fallen-for}.
+**NAKAMOTO**, Satoshi. «Bitcoin: A Peer-to-Peer Electronic Cash System», 2008. [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf).
 
-«Blockchain». \textit{Wikipédia}, 4 mars 2018. \url{https://fr.wikipedia.org/w/index.php?title=Blockchain&oldid=146072437}.
+### Sites web
 
-Chateauneuf, Alain, Caroline Ventura, Alain Chateauneuf, et Caroline Ventura. \textit{Blockchain publique et contrats intelligents (Smart Contrats). Les possibilités ouvertes par Ethéreum... et ses limites}, 2009.
+**LAURENT**, Charlotte. «7 applications possibles de la technologie blockchain». *7x7*. Consulté le 5 mars 2018. [https://www.7x7.press/7-applications-possibles-de-la-technologie-blockchain](https://www.7x7.press/7-applications-possibles-de-la-technologie-blockchain).
 
-«Cours du bitcoin». Bitcoin.fr (blog), 8 mai 2013. https://bitcoin.fr/cours-du-bitcoin/.
-«Date (métadonnée)». \textit{Wikipédia}, 31 octobre 2015. \url{https://fr.wikipedia.org/w/index.php?title=Date_(m\%C3\%A9tadonn\%C3\%A9e)&oldid=120037210}.
+**HARTIKKA**, Lauri. «A blockchain in 200 lines of code». *Medium*, 4 mars 2017. [https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54](https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54).
 
-Dernière, Alsace blockchain dans Blockchain • L’année. «Blockchain - Un Peu d’histoire». Steemit, 24 octobre 2016. \url{https://steemit.com/blockchain/@alsaceblockchain/blockchain-un-peu-d-histoire-and-pourquoi-cela-fonctionne}.
+«Attaque Sybil». *Wikipédia*, 19 mai 2017. [https://fr.wikipedia.org/w/index.php?title=Attaque_Sybil&oldid=137477672](https://fr.wikipedia.org/w/index.php?title=Attaque_Sybil&oldid=137477672).
 
-«Fonction de hachage». \textit{Wikipédia}, 21 décembre 2017. \url{https://fr.wikipedia.org/w/index.php?title=Fonction_de_hachage&oldid=143729531}.
+«Les bénéfices de la Preuve d’Autorité - Proof-of-Authority (PoA)». *Technologies e-business*, 11 avril 2017. [https://www.technologies-ebusiness.com/enjeux-et-tendances/benefices-de-preuve-dautorite-proof-of-authority-poa](https://www.technologies-ebusiness.com/enjeux-et-tendances/benefices-de-preuve-dautorite-proof-of-authority-poa).
 
-France, Ethereum. «Qu’est-ce que la preuve d’enjeu / Proof-of-Stake ? – FAQ par V. Buterin – Traduction française». Ethereum France, 3 janvier 2017. \url{https://www.ethereum-france.com/quest-ce-que-la-preuve-denjeu-proof-of-stake-faq-par-v-buterin-traduction-francaise/}.
+«Blockchain». *Wikipédia*, 4 mars 2018. [https://fr.wikipedia.org/w/index.php?title=Blockchain&oldid=146072437](https://fr.wikipedia.org/w/index.php?title=Blockchain&oldid=146072437).
 
-Hartikka, Lauri. «A blockchain in 200 lines of code». Lauri Hartikka (blog), 4 mars 2017. \url{https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54}.
+**ZANIOTTO**, François. «La blockchain expliquée aux développeurs web, partie 1: la théorie». Consulté le 5 mars 2018. [https://marmelab.com/blog/2016/05/12/blockchain-expliquee-aux-developpeurs-web-la-theorie.html].
 
-«Heure Unix». \textit{Wikipédia}, 18 novembre 2017. \url{https://fr.wikipedia.org/w/index.php?title=Heure_Unix&oldid=142728819}.
+«Blockchain size». *Bitcoin.Com*, Consulté le 5 mars 2018. [https://charts.bitcoin.com/chart/blockchain-size](https://charts.bitcoin.com/chart/blockchain-size).
 
-«Horodatage». \textit{Wikipédia}, 28 octobre 2016. \url{https://fr.wikipedia.org/w/index.php?title=Horodatage&oldid=131149114}.
+«Blockchain - Un Peu d’histoire». *Steemit*, 24 octobre 2016. [https://steemit.com/blockchain/@alsaceblockchain/blockchain-un-peu-d-histoire-and-pourquoi-cela-fonctionne](https://steemit.com/blockchain/@alsaceblockchain/blockchain-un-peu-d-histoire-and-pourquoi-cela-fonctionne).
 
-inso. «Duniter, pourquoi, comment ?» Duniter, 24 janvier 2018. \url{https://duniter.org/fr/duniter-pourquoi-comment}.
+**PERRY**, J. Steven. «Chaincode for Java Developers». *IBM*, 30 mars 2017. [http://www.ibm.com/developerworks/library/j-chaincode-for-java-developers/index.html](http://www.ibm.com/developerworks/library/j-chaincode-for-java-developers/index.html).
 
-J. Steven Perry. «Chaincode for Java Developers». IBM, 30 mars 2017. \url{http://www.ibm.com/developerworks/library/j-chaincode-for-java-developers/index.html}.
+«Chiffrer.info». *Chiffrer.info*, 21 juillet 2016. [https://chiffrer.info/](https://chiffrer.info/).
 
-Karl J. O’Dwyer, David Malone. «Bitcoin Mining and its Energy Footprint». Hamilton Institute National University of Ireland Maynooth, 26 juin 2014. \url{http://karlodwyer.com/publications/pdf/bitcoin_KJOD_2014.pdf}.
+«Cours du bitcoin». *Bitcoin.fr (blog)*, 8 mai 2013. [https://bitcoin.fr/cours-du-bitcoin/](https://bitcoin.fr/cours-du-bitcoin/).
 
-«La signature numérique - Fonctionnement». Consulté le 5 mars 2018. \url{http://www-igm.univ-mlv.fr/~dr/XPOSE2006/depail/fonctionnement.htm}l.
+«Une classification des monnaies décentralisées». *Bitcoin.fr*, 10 février 2015. [https://bitcoin.fr/une-classification-des-monnaies-decentralisees/](https://bitcoin.fr/une-classification-des-monnaies-decentralisees/).
 
-Laborde, Stéphane. Théorie Relative de la Monnaie v2.718, 2012. \url{http://trm.creationmonetaire.info/}.
+**SAUREL**, Sylvian. «Create Your Own Blockchain in 30 Minutes», 27 janvier 2018. [https://www.ssaurel.com/blog/create-your-own-blockchain-in-30-minutes/](https://www.ssaurel.com/blog/create-your-own-blockchain-in-30-minutes/).
 
-Laurent, Charlotte. «7 applications possibles de la technologie blockchain». 7x7. Consulté le 5 mars 2018. \url{https://www.7x7.press/7-applications-possibles-de-la-technologie-blockchain}.
+«Les cryptomonnaies du futur». *AgoraVox*, 15 février 2017. [http://www.agoravox.fr/actualites/economie/article/les-cryptomonnaies-du-futur-189712](http://www.agoravox.fr/actualites/economie/article/les-cryptomonnaies-du-futur-189712).
 
-«Les monnaies numériques et leur impact écologique». Fournisseur-Energie (blog), 20 décembre 2017. \url{https://www.fournisseur-energie.com/monnaies-numeriques-impact-ecologique/}.
+«Date (métadonnée)». *Wikipédia*, 31 octobre 2015. [https://fr.wikipedia.org/w/index.php?title=Date_(m\%C3\%A9tadonn\%C3\%A9e)&oldid=120037210](https://fr.wikipedia.org/w/index.php?title=Date_(m\%C3\%A9tadonn\%C3\%A9e)&oldid=120037210).
 
-Maxence. «Chiffrer.info». Chiffrer.info, 21 juillet 2016. \url{https://chiffrer.info/}.
+«Digmasbord raconte l’histoire de la blockchain Part1». **Digmasbord**, 24 février 2018. [https://www.meteo-blockchain.fr/digmasbord-blockchain/l-histoire-de-la-blockchain/](https://www.meteo-blockchain.fr/digmasbord-blockchain/l-histoire-de-la-blockchain/).
 
-Nakamoto, Satoshi. «Bitcoin: A Peer-to-Peer Electronic Cash System», 2008. \url{https://bitcoin.org/bitcoin.pdf}.
+«Duniter, pourquoi, comment ?» *Duniter*, 24 janvier 2018. [https://duniter.org/fr/duniter-pourquoi-comment](https://duniter.org/fr/duniter-pourquoi-comment).
 
-Rédaction Reuters. «Des transactions en “blockchain” testées par 40 grandes banques». Reuters, 3 mars 2016. \url{https://fr.reuters.com/article/companyNews/idFRL8N16B2DR}.
+«Fonction de hachage». *Wikipédia*, 21 décembre 2017. [https://fr.wikipedia.org/w/index.php?title=Fonction_de_hachage&oldid=143729531](https://fr.wikipedia.org/w/index.php?title=Fonction_de_hachage&oldid=143729531).
 
-«Réseau». \textit{Wikipédia}, 31 janvier 2018. \url{https://fr.wikipedia.org/w/index.php?title=R\%C3\%A9seau&oldid=145050872}.
+«Heure Unix». *Wikipédia*, 18 novembre 2017. [https://fr.wikipedia.org/w/index.php?title=Heure_Unix&oldid=142728819](https://fr.wikipedia.org/w/index.php?title=Heure_Unix&oldid=142728819).
 
-S. Saurel. «Create Your Own Blockchain in 30 Minutes – All for Android, Android for All», 27 janvier 2018. \url{https://www.ssaurel.com/blog/create-your-own-blockchain-in-30-minutes/}.
+«Horodatage». *Wikipédia*, 28 octobre 2016. [https://fr.wikipedia.org/w/index.php?title=Horodatage&oldid=131149114](https://fr.wikipedia.org/w/index.php?title=Horodatage&oldid=131149114).
 
-SQLI. «Les bénéfices de la Preuve d’Autorité - Proof-of-Authority (PoA)». Technologies e-business, 11 avril 2017. \url{https://www.technologies-ebusiness.com/enjeux-et-tendances/benefices-de-preuve-dautorite-proof-of-authority-poa}.
+«Les monnaies numériques et leur impact écologique». *Fournisseur-Energie (blog)*, 20 décembre 2017. [https://www.fournisseur-energie.com/monnaies-numeriques-impact-ecologique/](https://www.fournisseur-energie.com/monnaies-numeriques-impact-ecologique/).
 
-«Temps universel coordonné». \textit{Wikipédia}, 5 novembre 2017. \url{https://fr.wikipedia.org/w/index.php?title=Temps_universel_coordonn\%C3\%A9&oldid=142318935}.
+**BUTERIN**, Vitalik. «Qu’est-ce que la preuve d’enjeu / Proof-of-Stake ?». *Ethereum France*, 3 janvier 2017. [https://www.ethereum-france.com/quest-ce-que-la-preuve-denjeu-proof-of-stake-faq-par-v-buterin-traduction-francaise/](https://www.ethereum-france.com/quest-ce-que-la-preuve-denjeu-proof-of-stake-faq-par-v-buterin-traduction-francaise/).
 
-webadmin. «Digmasbord raconte l’histoire de la blockchain Part1». Projet Digmasbord (blog), 24 février 2018. \url{https://www.meteo-blockchain.fr/digmasbord-blockchain/l-histoire-de-la-blockchain/}.
+«Réseau». *Wikipédia*, 31 janvier 2018. [https://fr.wikipedia.org/w/index.php?title=R\%C3\%A9seau&oldid=145050872](https://fr.wikipedia.org/w/index.php?title=R\%C3\%A9seau&oldid=145050872).
 
-Zaninotto, François. «La blockchain expliquée aux développeurs web, partie 1: la théorie». Consulté le 5 mars 2018. \url{https://marmelab.com/blog/2016/05/12/blockchain-expliquee-aux-developpeurs-web-la-theorie.html}.
+«La signature numérique - Fonctionnement». *Institut d'électronique et d'informatique Gaspard-Monge*, Consulté le 5 mars 2018. [http://www-igm.univ-mlv.fr/~dr/XPOSE2006/depail/fonctionnement.html](http://www-igm.univ-mlv.fr/~dr/XPOSE2006/depail/fonctionnement.html).
+
+«Temps universel coordonné». *Wikipédia*, 5 novembre 2017. [https://fr.wikipedia.org/w/index.php?title=Temps_universel_coordonn\%C3\%A9&oldid=142318935](https://fr.wikipedia.org/w/index.php?title=Temps_universel_coordonn\%C3\%A9&oldid=142318935).
+
+«Top 5 Blockchain Technology Myths the Mainstream Has Fallen For». *Bitconnect.co.* Consulté le 5 mars 2018. [https://bitconnect.co/bitcoin-news/119/top-5-blockchain-technology-myths-the-mainstream-has-fallen-for](https://bitconnect.co/bitcoin-news/119/top-5-blockchain-technology-myths-the-mainstream-has-fallen-for).
+
+«Des transactions en “blockchain” testées par 40 grandes banques». *Reuters*, 3 mars 2016. [https://fr.reuters.com/article/companyNews/idFRL8N16B2DR](https://fr.reuters.com/article/companyNews/idFRL8N16B2DR).
