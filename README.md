@@ -30,8 +30,10 @@ Le Bitcoin n'est connu que d'un petit nombre d'internautes jusqu'au mois de nove
 Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à s'intéresser au fonctionnement de la cryptomonnaie et de la Blockchain. Les entreprises se rendent alors compte du potentiel que représente la Blockchain.
 
 <sup>2</sup> **Nakamoto**, Satoshi (2008). *Bitcoin: A Peer-to-Peer Electronic Cash System*. Consultable en ligne : [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf) (Consulté le 27/02/2018).
-<sup>3</sup> Le site BitCoin.org a tenté de faire une liste des monnaies virtuelles : [https://bitcoin.fr/une-classification-des-monnaies-decentralisees/](https://bitcoin.fr/une-classification-des-monnaies-decentralisees/)
-<sup>4</sup>Le cours du Bitcoin en temps réel peut être suivi sur : [https://bitcoin.fr/Cours-du-bitcoin/](https://bitcoin.fr/Cours-du-bitcoin/)
+
+<sup>3</sup> Le site BitCoin.org a tenté de faire une liste des monnaies virtuelles : [https://bitcoin.fr/une-classification-des-monnaies-decentralisees/](https://bitcoin.fr/une-classification-des-monnaies-decentralisees/).
+
+<sup>4</sup> Le cours du Bitcoin en temps réel peut être suivi sur : [https://bitcoin.fr/Cours-du-bitcoin/](https://bitcoin.fr/Cours-du-bitcoin/).
 
 ## Principe & fonctionnement
 
