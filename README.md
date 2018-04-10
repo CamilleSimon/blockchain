@@ -73,14 +73,13 @@ L'*index* est un numéro indiquant l'emplacement du bloc dans la liste. Le bloc 
 
 #### Timestamp
 
-Le *timestamp*, également appelé horodatage en français, sert à renseigner le moment où le bloc commence à être créé. Il existe plusieurs formats de temps. Dans le cas du Bitcoin, c'est le format de temps POSIX, très répandu en informatique, qui a été choisi. Il s'agit du nombre de secondes écoulées depuis le 1\textsuperscript{er} janvier 1970 à minuit au méridien de Greenwich. Pour une lecture du temps plus aisée, on peut choisir le standard ISO 8601. Voici un exemple de ces deux formats de temps :
-\begin{center}
-    \vspace{-15pt}
-    POSIX : $1519398019$ \\
-    ISO 8601: $2018-02-23T15:00:19Z$
-\end{center}
-
-\vspace{-30pt}
+Le *timestamp*, également appelé horodatage en français, sert à renseigner le moment où le bloc commence à être créé. Il existe plusieurs formats de temps. Dans le cas du Bitcoin, c'est le format de temps POSIX, très répandu en informatique, qui a été choisi. Il s'agit du nombre de secondes écoulées depuis le 1<sup>er</sup> janvier 1970 à minuit au méridien de Greenwich. Pour une lecture du temps plus aisée, on peut choisir le standard ISO 8601. Voici un exemple de ces deux formats de temps :
+<p align="center">
+  POSIX : <i>1519398019</i>
+</p>
+<p align="center">
+  ISO 8601: <i>2018-02-23T15:00:19Z</i>
+</p>
 
 #### Data
 
