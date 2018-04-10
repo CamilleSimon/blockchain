@@ -22,7 +22,7 @@ Pour répondre à ces questions, le présent rapport commencera par présenter u
 
 <sup>1</sup> Les devises utilisées par les États sont appelées *monnaies dettes*. Cette appellation vient du fait que l'argent est créé par le remboursement des dettes. Plus d'informations sur les monnaies réelles ou virtuelles : **Laborde**, Stéphane (2012) *La théorie relative de la monnaie*. Consultable en ligne : [http://trm.creationmonetaire.info/](http://trm.creationmonetaire.info/) (Consulté le 22/02/2018).
 
-## Rappel historique
+## 1. Rappel historique
 
 La technologie Blockchain a été évoquée pour la première fois en 2008 dans un article intitulé *Bitcoin: A Peer-to-Peer Electronic Cash System*<sup>2</sup> écrit par Satoshi Nakamoto. Il y présente son idée de création d'une monnaie décentralisée et dont les transactions seraient totalement transparentes. Il appelle Blockchain le support d'information enregistrant l'ensemble des transactions de façon transparente, anonyme et sécurisée.
 
@@ -40,11 +40,11 @@ Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à 
 
 <sup>4</sup> Le cours du Bitcoin en temps réel peut être suivi sur : [https://bitcoin.fr/Cours-du-bitcoin/](https://bitcoin.fr/Cours-du-bitcoin/).
 
-## Principe & fonctionnement
+## 2. Principe & fonctionnement
 
 Avant de détailler le fonctionnement de la Blockchain, il est nécessaire de définir ce qu'est une *fonction de condensat* également appelé *fonction de hachage*.
 
-### Fonction de condensat
+### 2.1. Fonction de condensat
 
 Les fonctions de condensat sont utilisées en cryptographie et en informatique. Il s'agit de fonctions qui prennent en entrée une donnée et retournent une *empreinte* ou une *signature* de taille fixée, également appelée *hash* qui garantit l'intégrité de cette donnée. La donnée peut être non seulement une liste de transactions comme dans le cas du Bitcoin, mais encore n'importe quel type d'information. Pour obtenir la signature d'une donnée, les fonctions de hachage les plus connues sont le *MD5* et le *SHA-256*. L'exemple ci-dessous présente les hash obtenus à partir de différentes chaînes de caractères en utilisant la fonction *MD5*.
 
@@ -63,7 +63,7 @@ Les fonctions de hachage sont caractérisées par les trois propriétés suivant
 
 On supposera dans la suite du document que le hash d'une information est unique. Passons maintenant à la description de la structure Blockchain.
 
-### Description de la structure Blockchain
+### 2.2. Description de la structure Blockchain
 
 Commençons par nous intéresser à l'élément central d'une Blockchain, le bloc. Tous les blocs de la Blockchain comportent les éléments suivants : un *index*, une date de création *timestamp*, de l'information *data*, le hash du bloc précédent dans la Blockchain *previousHash*, et le *hash* de son propre bloc. Détaillons ces différents éléments.
 
@@ -83,7 +83,7 @@ Le *timestamp*, également appelé horodatage en français, sert à renseigner l
 
 #### Data
 
-Il est possible d'enregistrer dans la Blockchain des informations de toutes sortes : des transactions, des messages, des enregistrements semblables à ce que l'on peut trouver dans des bases de données ou encore des URL. Cette information est appelée *data* du bloc. Elle peut être en partie ou entièrement chiffrée\footnote{Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.} afin de la sécuriser.
+Il est possible d'enregistrer dans la Blockchain des informations de toutes sortes : des transactions, des messages, des enregistrements semblables à ce que l'on peut trouver dans des bases de données ou encore des URL. Cette information est appelée *data* du bloc. Elle peut être en partie ou entièrement chiffrée<sup>5</sup> afin de la sécuriser.
 
 #### Hash et previousHash
 
@@ -93,15 +93,16 @@ Une fois le *hash* calculé il n'est plus possible de modifier l'index, le *prev
 
 De plus, le *previousHash* est une donnée utilisée dans la génération du *hash*. De cette façon on scelle le lien entre le bloc et son prédécesseur, créant ainsi une Blockchain, une chaîne de blocs ordonnés.
 
-\begin{figure}[!h]
-    \centering
-    \vspace{20pt}
-    \includegraphics[scale=0.7]{blockchain.png}
-    \caption{Chaîne de blocs.}
-    \label{fig:my_label}
-\end{figure}
+<p align="center">
+  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/blockchain.png" height="250"/>
+</p>
+<p align="center">
+  <b>Figure 3 :</b> Chaîne de blocs.
+</p>
 
-### Mise en \oeuvre de la Blockchain
+<sup>5</sup> Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.
+
+### Mise en oeuvre de la Blockchain
 
 On appelle *réseau* un ensemble de *\noeuds*reliés ensembles et communicant entre eux. Chaque \noeud possède une copie de la Blockchain. Un \noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau \noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des \noeuds qui produisent les nouveaux blocs sont appelés *mineurs* et le processus de création se nomme *le minage*.
 
