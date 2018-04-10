@@ -59,9 +59,7 @@ Les fonctions de hachage sont caractérisées par les trois propriétés suivant
 
 * Il est facile d'obtenir le hash d'une information. Cette opération demande un temps de calcul négligeable.
 * L'opération réciproque, c'est-à-dire reconstituer un document en fonction de son hash est au contraire impossible. Cette propriété est appelée "propriété de sens unique".
-    
-    \item On appelle *collision* deux empreintes identiques provenant du hachage de deux informations différentes. Pour que la fonction de condensat soit considérée comme étant de bonne qualité, il faut qu'elle limite le nombre de collision. Cette propriété est dite de "résistance aux collisions". 
-\end{itemize}
+* On appelle *collision* deux empreintes identiques provenant du hachage de deux informations différentes. Pour que la fonction de condensat soit considérée comme étant de bonne qualité, il faut qu'elle limite le nombre de collision. Cette propriété est dite de "résistance aux collisions". 
 
 On supposera dans la suite du document que le hash d'une information est unique. Passons maintenant à la description de la structure Blockchain.
 
@@ -71,7 +69,7 @@ Commençons par nous intéresser à l'élément central d'une Blockchain, le blo
 
 #### Index
 
-L'*index* est un numéro indiquant l'emplacement du bloc dans la liste. Le bloc d'index 0 est le premier bloc de la chaîne. Le bloc d'index 8 est le 9\textsuperscript{ème} bloc de la chaîne, et de manière générale le bloc d'index $i$ est donc le $i+1$\textsuperscript{ème} bloc de la chaîne.
+L'*index* est un numéro indiquant l'emplacement du bloc dans la liste. Le bloc d'index 0 est le premier bloc de la chaîne. Le bloc d'index 8 est le 9<sup>ème</sup> bloc de la chaîne, et de manière générale le bloc d'index *i* est donc le *i+1*<sup>ème</sup> bloc de la chaîne.
 
 #### Timestamp
 
