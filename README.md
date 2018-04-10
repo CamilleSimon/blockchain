@@ -45,7 +45,6 @@ Cette publicité autour du Bitcoin amène un public de plus en plus nombreux à 
 Avant de détailler le fonctionnement de la Blockchain, il est nécessaire de définir ce qu'est une *fonction de condensat* également appelé *fonction de hachage*.
 
 ### 2.1. Fonction de condensat
------------------------------------
 
 Les fonctions de condensat sont utilisées en cryptographie et en informatique. Il s'agit de fonctions qui prennent en entrée une donnée et retournent une *empreinte* ou une *signature* de taille fixée, également appelée *hash* qui garantit l'intégrité de cette donnée. La donnée peut être non seulement une liste de transactions comme dans le cas du Bitcoin, mais encore n'importe quel type d'information. Pour obtenir la signature d'une donnée, les fonctions de hachage les plus connues sont le *MD5* et le *SHA-256*. L'exemple ci-dessous présente les hash obtenus à partir de différentes chaînes de caractères en utilisant la fonction *MD5*.
 
@@ -65,7 +64,6 @@ Les fonctions de hachage sont caractérisées par les trois propriétés suivant
 On supposera dans la suite du document que le hash d'une information est unique. Passons maintenant à la description de la structure Blockchain.
 
 ### 2.2. Description de la structure Blockchain
----------------------------------------------------
 
 Commençons par nous intéresser à l'élément central d'une Blockchain, le bloc. Tous les blocs de la Blockchain comportent les éléments suivants : un *index*, une date de création *timestamp*, de l'information *data*, le hash du bloc précédent dans la Blockchain *previousHash*, et le *hash* de son propre bloc. Détaillons ces différents éléments.
 
@@ -105,7 +103,6 @@ De plus, le *previousHash* est une donnée utilisée dans la génération du *ha
 <sup>5</sup> Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.
 
 ### 2.3. Mise en oeuvre de la Blockchain
-------------------------------------------
 
 On appelle *réseau* un ensemble de *noeuds* reliés ensembles et communicant entre eux. Chaque noeud possède une copie de la Blockchain. Un noeud peut être un ordinateur ou un groupe d'ordinateurs. Lorsqu'un nouveau noeud rejoint le réseau, il reçoit une copie de la Blockchain. L'ensemble des noeuds qui produisent les nouveaux blocs sont appelés *mineurs* et le processus de création se nomme *le minage*.
 
@@ -115,7 +112,6 @@ On distingue trois types de Blockchain. Elles se différencient en fonction de l
 * Il existe enfin des *Blockchain hybrides* qui allient les aspects publics et privés.
 
 #### 2.3.1. Principe du Minage
-----------------------------------------------
 
 Chaque mineur construit un bloc dit *local*, c'est-à-dire qu'il construit un bloc à partir des informations dont il a connaissance. Dans le cas du Bitcoin, chaque mineur enregistre les transactions dans l'ordre dans lequel elles lui parviennent. Cet ordre peut être différent d'un mineur à l'autre. On peut généraliser en appelant *faits* les informations transitant sur le réseau et collectées par les mineurs.
 
@@ -167,13 +163,11 @@ La Blockchain doit être unique, elle doit donc être la même sur l'ensemble de
 Les domaines d'applications de la Blockchain sont variés : banque, finance, assurance, logistique, industrie, énergie, etc. Cependant, il ne s'agit que de déclinaisons de deux grands types d'applications : l'utilisation de la Blockchain comme un registre d'information d'une part et comme remplacement des tiers de confiance d'autre part.
 
 ### 3.1. Registre
-------------------------------------
 
 Le premier usage que l'on trouve à la Blockchain est celui pour lequel elle a été conçue : enregistrer de l'information de façon pérenne. En effet, la structure en liste ordonnée dans le temps permet de stocker les informations de façon chronologique. On peut donc utiliser la Blockchain pour toutes les applications du type registre, par exemple registres d'état civil, registres matrimoniaux, registres des naissances, lois, etc.
 Par extension, elle peut également garder trace des transactions ou transferts d'informations, par exemple pour les registres bancaires et financiers, registres de bibliothèques, etc.
 
 ### 3.2. Smart Contrat
--------------------------------------
 
 La deuxième grande famille d'applications, moins connue, mais très prometteuse, consiste à utiliser la Blockchain comme un Smart Contrat. 
 
