@@ -100,7 +100,7 @@ De plus, le *previousHash* est une donnée utilisée dans la génération du *ha
   <b>Figure 3 :</b> Chaîne de blocs.
 </p>
 
-<sup>5</sup> Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : \url{https://chiffrer.info/}.
+<sup>5</sup> Le terme "crypter" n'est pas un mot de la langue française, bien qu'il soit reconnu au Québec. Plus d'informations sur le bon emploi de ces termes sur : [https://chiffrer.info/](https://chiffrer.info/).
 
 ### 2.3. Mise en oeuvre de la Blockchain
 
@@ -115,24 +115,23 @@ On distingue trois types de Blockchain. Elles se différencient en fonction de l
 
 Chaque mineur construit un bloc dit *local*, c'est-à-dire qu'il construit un bloc à partir des informations dont il a connaissance. Dans le cas du Bitcoin, chaque mineur enregistre les transactions dans l'ordre dans lequel elles lui parviennent. Cet ordre peut être différent d'un mineur à l'autre. On peut généraliser en appelant *faits* les informations transitant sur le réseau et collectées par les mineurs.
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[scale=0.8]{blocks_facts.png}
-    \caption{Les *confirmed facts* sont les faits confirmés et inscrits dans la Blockchain, les *pending facts* sont les faits qui ne sont pas encore enregistrés.}
-    \label{fig:my_label}
-\end{figure}
+<p align="center">
+  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/blocks_facts.png" height="100"/>
+</p>
+<p align="center">
+  <b>Figure 4 :</b> Les *confirmed facts* sont les faits confirmés et inscrits dans la Blockchain, les *pending facts* sont les faits qui ne sont pas encore enregistrés.
+</p>
 
 Les mineurs disposent d'un file d'attente dans laquelle ils placent les faits. L'ordre des faits est déterminer en fonction de leur arrivés. A la construction des données du bloc local, les faits de la file d'attente y sont copiés.
 
 Reste maintenant à établir quel bloc local va devenir le nouveau bloc de la Blockchain. Il existe différents types de *consensus* également appelés *preuve*. Sur le schéma ci-dessous, le nouveau bloc est choisi de façon aléatoire. Chaque mineur lance une paire de dés, on relance les dés jusqu'à ce que l'un des mineurs obtienne un double six. C'est alors son bloc qui est choisi pour être ajouté à la Blockchain.
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[scale=0.46]{rolling_dice.png}
-    \caption{Le mineur obtenant un double six obtient le droit de diffuser son bloc local qui devient le nouveau bloc de la Blockchain.}
-    \vspace{-10pt}
-    \label{fig:my_label}
-\end{figure}
+<p align="center">
+  <img src="https://github.com/CamilleSimon/blockchain-doc/blob/master/rolling_dice.png" height="100"/>
+</p>
+<p align="center">
+  <b>Figure 5 :</b> Le mineur obtenant un double six obtient le droit de diffuser son bloc local qui devient le nouveau bloc de la Blockchain.
+</p>
 
 Il existe différentes types preuves : 
 
@@ -150,13 +149,13 @@ Les noeuds sont amenés à vérifier l'intégrité de leur Blockchain. Il y a de
 
 **Vérification locale**
 
-À la réception d'un nouveau bloc, chaque \noeud doit vérifier que l'intégrité du bloc reçu n'a pas été altérée. Pour ce faire, on calcule le hash du bloc via la fonction de condensat, et on compare l'empreinte obtenue avec l'empreinte attachée au bloc. Si elles sont identiques, le noeud peut ajouter le bloc à sa Blockchain; en revanche, si une anomalie est détectée, le \noeud doit demander à un autre \noeud du réseau de lui renvoyer le bloc.
+À la réception d'un nouveau bloc, chaque noeud doit vérifier que l'intégrité du bloc reçu n'a pas été altérée. Pour ce faire, on calcule le hash du bloc via la fonction de condensat, et on compare l'empreinte obtenue avec l'empreinte attachée au bloc. Si elles sont identiques, le noeud peut ajouter le bloc à sa Blockchain; en revanche, si une anomalie est détectée, le noeud doit demander à un autre noeud du réseau de lui renvoyer le bloc.
 
-À intervalles de temps réguliers, les \noeuds doivent également vérifier que l'intégralité de leur chaîne est correcte. On vérifie alors chaque bloc de la même manière que pour les nouveaux blocs à ajouter en partant du dernier bloc et en remontant la chaîne via le *previousHash*. S’il y a un ou plusieurs blocs corrompus, le \noeud demande à un des autres \noeuds du réseau de lui renvoyer la Blockchain à partir du bloc non fiable le plus ancien.
+À intervalles de temps réguliers, les noeuds doivent également vérifier que l'intégralité de leur chaîne est correcte. On vérifie alors chaque bloc de la même manière que pour les nouveaux blocs à ajouter en partant du dernier bloc et en remontant la chaîne via le *previousHash*. S’il y a un ou plusieurs blocs corrompus, le noeud demande à un des autres noeuds du réseau de lui renvoyer la Blockchain à partir du bloc non fiable le plus ancien.
 
 **Vérification à l'échelle du réseau**
 
-La Blockchain doit être unique, elle doit donc être la même sur l'ensemble des \noeuds du réseau. S’il y a plusieurs Blockchains sur le réseau, la Blockchain la plus répandue sera considérée comme la Blockchain légitime. Les \noeuds non conformes devront donc la récupérer afin qu'il n'y ait qu'une unique Blockchain partagée par tous les \noeuds.
+La Blockchain doit être unique, elle doit donc être la même sur l'ensemble des noeuds du réseau. S’il y a plusieurs Blockchains sur le réseau, la Blockchain la plus répandue sera considérée comme la Blockchain légitime. Les noeuds non conformes devront donc la récupérer afin qu'il n'y ait qu'une unique Blockchain partagée par tous les noeuds.
 
 ## 3. Domaines d'application
 
@@ -171,39 +170,42 @@ Par extension, elle peut également garder trace des transactions ou transferts 
 
 La deuxième grande famille d'applications, moins connue, mais très prometteuse, consiste à utiliser la Blockchain comme un Smart Contrat. 
 
-Étudions un cas concret : un propriétaire met en location un logement au prix de 1 000 € par semaine. Un premier versement de 50 \% de la somme se fait à la réservation du logement. Le locataire doit également donner un chèque de caution de 5 000 €. Les 50 \% restant seront versés à la fin de la location. Tous ces éléments sont inscrits dans un contrat signé par le locataire et le propriétaire.
+Étudions un cas concret : un propriétaire met en location un logement au prix de 1 000 € par semaine. Un premier versement de 50 % de la somme se fait à la réservation du logement. Le locataire doit également donner un chèque de caution de 5 000 €. Les 50 % restant seront versés à la fin de la location. Tous ces éléments sont inscrits dans un contrat signé par le locataire et le propriétaire.
 
-Malheureusement, à la fin de la location le locataire refuse de verser les 50 \% restant. De plus, une vitre a été cassée, et lorsque le propriétaire a voulu encaisser le chèque, celui-ci a été refusé car le compte était vide. Le propriétaire décide donc de porter plainte et comparait au tribunal. Les acteurs en présence sont donc les suivants : le propriétaire, le locataire, le juriste qui a rédigé le contrat de location, la banque maniant les fonds, l'avocat et le tribunal pour la plainte.
+Malheureusement, à la fin de la location le locataire refuse de verser les 50 % restant. De plus, une vitre a été cassée, et lorsque le propriétaire a voulu encaisser le chèque, celui-ci a été refusé car le compte était vide. Le propriétaire décide donc de porter plainte et comparait au tribunal. Les acteurs en présence sont donc les suivants : le propriétaire, le locataire, le juriste qui a rédigé le contrat de location, la banque maniant les fonds, l'avocat et le tribunal pour la plainte.
 
-Dans le cas d'un Smart Contrat, les différents éléments du contrat sont enregistrés sous la forme de mini-programmes dans des blocs. Les deux parties, locataire et propriétaire, scellent le contrat ensemble de façon à ce qu’eux seuls puissent l'annuler\footnote{Il s'agit d'un mécanisme de clé publique/clé privé qui n'est pas présenté ici car il n'est pas utilisé dans toutes les Blockchains. Vous pouvez consulter une rapide présentation à l'adresse suivante : \url{http://www-igm.univ-mlv.fr/~dr/XPOSE2006/depail/fonctionnement.html}}. Le mini-programme s'exécute à un moment donné par un horodatage inscrit dans le bloc. 
+Dans le cas d'un Smart Contrat, les différents éléments du contrat sont enregistrés sous la forme de mini-programmes dans des blocs. Les deux parties, locataire et propriétaire, scellent le contrat ensemble de façon à ce qu’eux seuls puissent l'annuler<sup>6</sup>. Le mini-programme s'exécute à un moment donné par un horodatage inscrit dans le bloc. 
 
 Dans notre cas cela donnerait :
-\begin{itemize}
-    \item Un premier bloc effectuant le virement de 50 \% de la somme du locataire vers le propriétaire, et la mise en place d'un verrou sur le reste de la somme. Ce bloc s'exécute deux semaines avant la location.
-    \item Le deuxième bloc ne s'exécute que si la location est annulée avant la date de début de location. Il fait le virement des 50 \% du propriétaire vers le locataire et lève le verrou sur l'argent du locataire. Il annule également la suite du contrat.
-    \item Le troisième bloc se déclenche à la date de début de la location et verrouille les 5 000 € de caution.
-    \item À la fin de la location, le quatrième bloc effectue le virement des 50 \% restant du locataire vers le propriétaire.
-    \item Reste maintenant à libérer la caution, cela ne peut se faire que si les deux parties sont d'accord. S’il y a eu dégradation, c'est le cinquième bloc qui s'exécute et vire la caution au propriétaire. Sinon, c'est le sixième bloc qui s'exécute, il enlève le verrou sur l'argent réservé pour la caution.
-    \item Le contrat continu d'exister tant que la Blockchain existe. 
-\end{itemize}
+* Un premier bloc effectuant le virement de 50 % de la somme du locataire vers le propriétaire, et la mise en place d'un verrou sur le reste de la somme. Ce bloc s'exécute deux semaines avant la location.
+* Le deuxième bloc ne s'exécute que si la location est annulée avant la date de début de location. Il fait le virement des 50 \% du propriétaire vers le locataire et lève le verrou sur l'argent du locataire. Il annule également la suite du contrat.
+* Le troisième bloc se déclenche à la date de début de la location et verrouille les 5 000 € de caution.
+* À la fin de la location, le quatrième bloc effectue le virement des 50 % restant du locataire vers le propriétaire.
+* Reste maintenant à libérer la caution, cela ne peut se faire que si les deux parties sont d'accord. S’il y a eu dégradation, c'est le cinquième bloc qui s'exécute et vire la caution au propriétaire. Sinon, c'est le sixième bloc qui s'exécute, il enlève le verrou sur l'argent réservé pour la caution.
+* Le contrat continu d'exister tant que la Blockchain existe. 
 
 Dans le cas de l'usage d'une Blockchain, il devient possible de réduire les intermédiaires comme les juristes. De plus, ce type de contrat peut remplacer les *tiers de confiance* comme les banques qui servent habituellement de garants afin de verrouiller les fonds le temps de la transaction.
 
+<sup>6</sup>Il s'agit d'un mécanisme de clé publique/clé privé qui n'est pas présenté ici car il n'est pas utilisé dans toutes les Blockchains. Vous pouvez consulter une rapide présentation à l'adresse suivante : [http://www-igm.univ-mlv.fr/~dr/XPOSE2006/depail/fonctionnement.html](http://www-igm.univ-mlv.fr/~dr/XPOSE2006/depail/fonctionnement.html).
+
 ## 4. Limites et perspectives
 
-Une première limite concerne la taille de la Blockchain. En effet, comme la Blockchain doit être unique, toutes les informations sont enregistrées dans la même liste. On estime la taille actuelle de la Blockchain utilisée pour les transactions Bitcoin à 150 Go\footnote{Il est possible de suivre en temps réel l'évolution de la taille de la Blockchain sur : \url{https://charts.bitcoin.com/chart/blockchain-size}}. Cette taille importante impose aux \noeuds du réseau de disposer de suffisamment d'espace mémoire. Toutefois, ceci peut être nuancé aux vues du faible coût de l'espace mémoire. Cette contrainte est plus importante dans le cas d'une application aux objets connectés où les ressources sont plus restreintes.
+Une première limite concerne la taille de la Blockchain. En effet, comme la Blockchain doit être unique, toutes les informations sont enregistrées dans la même liste. On estime la taille actuelle de la Blockchain utilisée pour les transactions Bitcoin à 150 Go<sup>7</sup>. Cette taille importante impose aux noeuds du réseau de disposer de suffisamment d'espace mémoire. Toutefois, ceci peut être nuancé aux vues du faible coût de l'espace mémoire. Cette contrainte est plus importante dans le cas d'une application aux objets connectés où les ressources sont plus restreintes.
 
-En fonction du nombre de \noeuds sur le réseau, certains problèmes peuvent émerger. Une fois le consensus réalisé, le nouveau bloc élu doit être envoyé à l'ensemble des \noeuds ce qui engendre un encombrement du réseau. De plus, les mineurs ne peuvent proposer de nouveaux blocs qu'une fois le bloc précédent réceptionné par l'ensemble des \noeuds. Cette attente des \noeuds se traduit par des effets de latence sur le réseau. Le phénomène de latence augmente davantage lorsque qu'une partie de la Blockchain doit transiter entre les \noeuds. C'est le cas si un ensemble de \noeuds n'a pas la bonne version de la Blockchain. 
+En fonction du nombre de noeuds sur le réseau, certains problèmes peuvent émerger. Une fois le consensus réalisé, le nouveau bloc élu doit être envoyé à l'ensemble des noeuds ce qui engendre un encombrement du réseau. De plus, les mineurs ne peuvent proposer de nouveaux blocs qu'une fois le bloc précédent réceptionné par l'ensemble des noeuds. Cette attente des noeuds se traduit par des effets de latence sur le réseau. Le phénomène de latence augmente davantage lorsque qu'une partie de la Blockchain doit transiter entre les noeuds. C'est le cas si un ensemble de noeuds n'a pas la bonne version de la Blockchain. 
 
-Beaucoup de détracteurs de la Blockchain lui reprochent son coût énergétique. Il s'agit là d'un double amalgame. En effet ce n'est pas la Blockchain en elle-même qui nécessite beaucoup de ressource, c'est éventuellement la preuve de travail. Il s'agit en réalité plus d'un problème propre aux cryptomonnaies car la difficulté de la preuve de travail est augmentée régulièrement. Cette augmentation de la difficulté entraîne la consommation de ressources machines toujours plus importantes. Il est possible d'utiliser la preuve de travail sans connaître de coût énergétique excessif. De même, il existe d'autres preuves pouvant être adoptées. Il suffit de prendre pour exemple la monnaie virtuelle *Ğ1* dont l'impact carbone est très faible car ce n'est pas le minage qui génère la création de monnaie\footnote{La description de la monnaie *Ğ1* ainsi que son mode de fonctionnement sont décrit à l'adresse : \url{https://duniter.org/fr/duniter-pourquoi-comment/}.}. 
+Beaucoup de détracteurs de la Blockchain lui reprochent son coût énergétique. Il s'agit là d'un double amalgame. En effet ce n'est pas la Blockchain en elle-même qui nécessite beaucoup de ressource, c'est éventuellement la preuve de travail. Il s'agit en réalité plus d'un problème propre aux cryptomonnaies car la difficulté de la preuve de travail est augmentée régulièrement. Cette augmentation de la difficulté entraîne la consommation de ressources machines toujours plus importantes. Il est possible d'utiliser la preuve de travail sans connaître de coût énergétique excessif. De même, il existe d'autres preuves pouvant être adoptées. Il suffit de prendre pour exemple la monnaie virtuelle *Ğ1* dont l'impact carbone est très faible car ce n'est pas le minage qui génère la création de monnaie<sup>8</sup>. 
+
+<sup>7</sup> Il est possible de suivre en temps réel l'évolution de la taille de la Blockchain sur : [https://charts.bitcoin.com/chart/blockchain-size](https://charts.bitcoin.com/chart/blockchain-size).
+<sup>8</sup> La description de la monnaie *Ğ1* ainsi que son mode de fonctionnement sont décrit à l'adresse : [https://duniter.org/fr/duniter-pourquoi-comment/](https://duniter.org/fr/duniter-pourquoi-comment/).
 
 ## Conclusion
 
 La technologie Blockchain a été créée en 2008 en même temps que la cryptomonnaie Bitcoin. Elle a été conçue afin de servir de registre aux transactions financières de façon à ce que l'information soit décentralisée, sécurisée et anonyme. Concrètement mise en place à partir de 2013, cette première Blockchain est toujours en activité.
 
-L'intérêt des banques pour cette nouvelle économie a également mis en lumière la technologie sous-jacente : la Blockchain. Dès lors, les entreprises ont commencé à vouloir exploiter cette technologie dans de multiples domaines d'autant plus qu'elle est facile à mettre en \oeuvre.
+L'intérêt des banques pour cette nouvelle économie a également mis en lumière la technologie sous-jacente : la Blockchain. Dès lors, les entreprises ont commencé à vouloir exploiter cette technologie dans de multiples domaines d'autant plus qu'elle est facile à mettre en oeuvre.
 
-Quoique simple, le structure en chaîne de bloc suffit néanmoins à garantir la sécurité et l'intégrité des données. De plus, la Blockchain est répliquée sur l'ensemble des \noeuds du réseau assurant ainsi sa robustesse.
+Quoique simple, le structure en chaîne de bloc suffit néanmoins à garantir la sécurité et l'intégrité des données. De plus, la Blockchain est répliquée sur l'ensemble des noeuds du réseau assurant ainsi sa robustesse.
 
 Il existe trois types de Blockchain en fonction des droits de minage, de la plus restrictive, la Blockchain privée à la plus permissive, le Blockchain publique. Quel que soit le type de Blockchain, le choix de la preuve influe sur la dépense énergétique et la latence du réseau. Seules quelques limites sont connues à la Blockchain notamment sa taille en constante augmentation et l'encombrement du réseau proportionnel à cette taille.
 
