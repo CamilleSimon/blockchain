@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Node {
+import org.graphstream.graph.Node;
+
+public interface User extends Node {
 
 	protected List<Block> blockchain;	//Copie of the Blockchain
 	public int id;						//Id of the node
@@ -10,7 +12,7 @@ public class Node {
 	 * Constructor with an empty blockchain
 	 * @param id
 	 */
-	public Node(int id){
+	public User(int id){
 		this(id, new ArrayList<Block>());
 	}
 	
